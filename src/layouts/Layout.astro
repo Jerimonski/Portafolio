@@ -1,13 +1,18 @@
+---
+import Header from "../components/Header.astro"
+import "../styles/global.css";
+---
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Portafolio</title>
 	</head>
 	<body>
+		<Header/>
 		<slot />
 	</body>
 </html>
@@ -15,8 +20,11 @@
 <style>
 	html,
 	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
+		background-color: rgb(11, 11, 13);
+		color: white;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 </style>
