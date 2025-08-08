@@ -4,3 +4,27 @@
   --color-light-green: #4ade80;
   --font-Primary: "Mulish Variable", sans-serif;
 }
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi/Satoshi-Variable.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Italic";
+  src: url("/public/fonts/Satoshi/Satoshi-VariableItalic.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+}
+
+.font-Italic {
+  font-family: "Italic", sans-serif;
+}
