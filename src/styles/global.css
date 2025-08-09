@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-light-green: #4ade80;
+  --color-light-green: #63c565;
+  --color-black-ground: #111116;
   --font-Primary: "Mulish Variable", sans-serif;
 }
 
