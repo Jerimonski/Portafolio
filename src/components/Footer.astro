@@ -1,5 +1,8 @@
 ---
 import ButtonAnimateRotate from '../ui/ButtonAnimateRotate.astro'
+import { FaLinkedinIn } from "react-icons/fa";
+import { CgMail } from "react-icons/cg";
+import { FaGithub } from "react-icons/fa";
 ---
 
 <footer class="w-[1120px] mx-auto">
@@ -12,11 +15,21 @@ import ButtonAnimateRotate from '../ui/ButtonAnimateRotate.astro'
         <ButtonAnimateRotate initialText="Contactame" finalText="Contactame"/>
     </div>
     <div class="flex justify-between py-6">
-        <p>asdsad</p>
-        <nav class="flex gap-4">
-            <a href="">Linkedin</a>
-            <a href="">Gmail</a>
-            <a href="">Github</a>
+        <a href="/" class="bg-black-ground px-2 border rounded-4xl">JA</a>
+        <nav class="flex gap-4 items-center group">
+            <a 
+            class="transition-opacity duration-300 ease-in-out
+            group-hover:opacity-40 hover:opacity-100"
+            target="_blank" href="https://www.linkedin.com/in/jeremy-amaru"
+            ><FaLinkedinIn size="20" /></a>
+            <a
+            class="transition-opacity duration-300 ease-in-out
+            group-hover:opacity-40 hover:opacity-100"
+            target="_blank" href=""><CgMail size="30"/></a>
+            <a 
+            class="transition-opacity duration-300 ease-in-out
+            group-hover:opacity-40 hover:opacity-100"
+            target="_blank" href="https://github.com/Jerimonski"><FaGithub size="25" /></a>
         </nav>
     </div>
 </footer>
