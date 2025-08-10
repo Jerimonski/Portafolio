@@ -1,0 +1,84 @@
+---
+import ProjectCard from "./components/ProjectCard.astro"
+import { TbHexagons } from "react-icons/tb";
+---
+<section class="w-[1120px] pb-24" id="Proyectos">
+    <article class="space-y-4 pb-16">
+            <h3 class="text-light-green text-xl flex gap-2 items-center">
+                Mi Trabajo
+            </h3>
+        <h1 class="text-5xl">Algunos De Mis Proyectos</h1>
+        <p class="text-secondary-text">
+            Here's a curated selection showcasing my expertise and 
+            the achieved results.
+        </p>
+    </article>
+    <div class="flex justify-center flex-cols-2 gap-14 group">
+        <div class="flex-grow space-y-12 w-1/2">
+            <ProjectCard Title="BookMyFit" Rol="FullStack" Year="2025" ColorBg="bg-light-green">
+                <p class="text-pretty">
+                    Web orientada a la gestión de reservas de espacios deportivos en 
+                    una sede especializada. El sistema permite a los usuarios registrarse,
+                    elegir una disciplina deportiva entre una variedad disponible y agendar 
+                    horarios según la disponibilidad del lugar.
+                </p>
+                <div class="flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label">
+                    <span class="rounded-4xl px-4 py-1">HTML</span>
+                    <span class="rounded-4xl px-4 py-1">Javascript</span>
+                    <span class="rounded-4xl px-4 py-1">React</span>
+                    <span class="rounded-4xl px-4 py-1">TailwindCSS</span>
+                    <span class="rounded-4xl px-4 py-1">Node.js</span>
+                    <span class="rounded-4xl px-4 py-1">PostgreSQL</span>
+                    <span class="rounded-4xl px-4 py-1">Jenkins</span>
+                    <span class="rounded-4xl px-4 py-1">SonarQube</span>
+                    <span class="rounded-4xl px-4 py-1">Vite</span>
+                </div>
+            </ProjectCard>
+            <ProjectCard Title="BonsaiPractice" Rol="Front-end" Year="2024" ColorBg="bg-[#2c6130]">
+                <p>
+                    Landing page de práctica enfocada en la replicación del contenido y diseño de 
+                    una página existente, con el objetivo de perfeccionar habilidades de maquetación 
+                    y estilo.
+                </p>
+                <div class="flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label">
+                    <span class="rounded-4xl px-4 py-1">HTML</span>
+                    <span class="rounded-4xl px-4 py-1">Javascript</span>
+                    <span class="rounded-4xl px-4 py-1">React</span>
+                    <span class="rounded-4xl px-4 py-1">TailwindCSS</span>
+                    <span class="rounded-4xl px-4 py-1">Vite</span>
+                </div>
+            </ProjectCard>
+        </div>
+        <div class="flex-grow mt-10 [&>div]:rounded-3xl space-y-12 w-1/2">
+            <ProjectCard Title="ShoesStore" Rol="Front-end" Year="2024" ColorBg="bg-[#8f3a3a]">
+                <p>
+                    Landing page interactiva enfocada en la presentación de zapatillas urbanas como Nike,
+                    Jordan y otras marcas. El usuario puede explorar distintos modelos, navegar entre
+                    páginas y acceder a una vista detallada de cada producto.
+                </p>
+                <div class="flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label">
+                    <span class="rounded-4xl px-4 py-1">HTML</span>
+                    <span class="rounded-4xl px-4 py-1">Javascript</span>
+                    <span class="rounded-4xl px-4 py-1">React</span>
+                    <span class="rounded-4xl px-4 py-1">Tailwind</span>
+                    <span class="rounded-4xl px-4 py-1">Vite</span>
+                </div>
+            </ProjectCard>
+            <ProjectCard Title="BlackShark" Rol="Front-end" Year="2024" ColorBg="bg-blue-900">
+                <p>
+                    Web orientada a un cliente real del rubro fotográfico, en la que mi aporte 
+                    consistió en el desarrollo de nuevas interfaces gráficas y la refactorización 
+                    del código para mejorar su rendimiento y organización.
+                </p>
+                <div class="flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label">
+                    <span class="rounded-4xl px-4 py-1">HTML</span>
+                    <span class="rounded-4xl px-4 py-1">Javascript</span>
+                    <span class="rounded-4xl px-4 py-1">React</span>
+                    <span class="rounded-4xl px-4 py-1">TypeScript</span>
+                    <span class="rounded-4xl px-4 py-1">Tailwind</span>
+                    <span class="rounded-4xl px-4 py-1">Vite</span>
+                </div>
+            </ProjectCard>
+        </div>
+    </div>
+</section>
