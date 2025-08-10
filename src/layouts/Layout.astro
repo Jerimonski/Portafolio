@@ -20,13 +20,20 @@ import "../styles/global.css";
 </html>
 
 <style>
-	html,
-	body {
+	html{
+		scroll-behavior: smooth;
 		background-color: rgb(11, 11, 13);
 		color: white;
+	},
+	body {
 		margin: auto;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+	},
+	@media (prefers-reduced-motion: reduce) {
+		html{
+			scroll-behavior: auto;
+		}
 	}
 </style>
