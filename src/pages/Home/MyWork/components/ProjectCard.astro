@@ -9,11 +9,17 @@ const { Title, Rol, Year, ColorBg } = Astro.props;
     </figure>
     <article class="space-y-2 py-4">
         <h3 class="text-lg">{Title}</h3>
-        <p class="flex justify-between text-sm">{Rol}<span>{Year}</span></p> 
+        <p class="flex justify-between text-sm text-secondary-text">{Rol}<span>{Year}</span></p> 
     </article>
     <slot />
-    <div class="flex justify-between gap-8 [&>button]:py-2 [&>button]:rounded-xl">
-        <button class="bg-amber-800 w-1/2 cursor-pointer">Demo</button>
-        <button class="bg-green-800 w-1/2 cursor-pointer">Repositorio</button>
+    <div class="flex justify-between gap-8 [&>button]:py-2 [&>button]:rounded-xl group">
+        <button 
+        class="font-extrabold text-lg bg-[#27aa59] w-1/2 cursor-pointer group-hover:opacity-40 hover:opacity-100 duration-300">
+            Demo
+        </button>
+        <button 
+        class="font-extrabold text-lg bg-[#17491a] w-1/2 cursor-pointer group-hover:opacity-40 hover:opacity-100 duration-300">
+            Repositorio
+    </button>
     </div>
 </div>
