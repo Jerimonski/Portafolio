@@ -2,12 +2,12 @@
 const { initialText, finalText } = Astro.props;
 ---
 
-<button class="relative overflow-hidden px-7 py-3 text-white font-bold group hover:scale-105 duration-300 rounded-4xl border">
-  <span class="block transition-all duration-300 group-hover:-translate-y-full">
+<button class="relative overflow-hidden px-7 py-3 text-white font-bold group hover:scale-105 duration-300 rounded-4xl border cursor-pointer">
+  <a href="/Contactame" class="block transition-all duration-300 group-hover:-translate-y-full">
     {initialText}
-  </span>
+  </a>
   <span class="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-all duration-300 rounded" />
-  <span class="absolute inset-0 flex items-center justify-center text-black font-bold translate-y-full group-hover:translate-y-0 transition-all duration-300">
+  <a href="/Contactame" class="absolute inset-0 flex items-center justify-center text-black font-bold translate-y-full group-hover:translate-y-0 transition-all duration-300">
     {finalText}
-  </span>
+  </a>
 </button>
