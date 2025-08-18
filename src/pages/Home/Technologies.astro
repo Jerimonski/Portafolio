@@ -1,0 +1,36 @@
+---
+import BackendTecs from "./Technologies/BackendTecs.astro"
+import FrontendTecs from "./Technologies/FrontendTecs.astro"
+import LearningTecs from "./Technologies/LearningTecs.astro"
+import ToolsTecs from "./Technologies/ToolsTecs.astro"
+import DevOps_Testing_QA_Tecs from "./Technologies/DevOps_Testing_QA_Tecs.astro"
+import TecsBox from "./Technologies/components/TecsBox.astro"
+---
+<section class="flex-col w-[1120px] py-68 flex">
+    <article class="space-y-4 pb-16">
+        <h3 class="text-light-green font-Primary text-2xl">Mi conocimiento</h3>
+        <h2 class="font-Primary text-6xl font-semibold">Tecnológicas</h2>
+        <p class="text-secondary-text">
+            Aquí las tecnologías aprendídas en la universidad y de forma didáctica.
+        </p>
+    </article>
+    <div class="grid grid-cols-2 gap-8 w-full">
+        <TecsBox Title="Frontend">
+            <FrontendTecs />
+        </TecsBox>
+        <TecsBox Title="Backend">
+            <BackendTecs />
+        </TecsBox>
+        <TecsBox Title="Aprendiendo">
+            <LearningTecs />
+        </TecsBox>
+        <TecsBox Title="Herramientas">
+            <ToolsTecs />
+        </TecsBox>
+    </div>
+    <div class="py-8 w-1/2 mx-auto">
+        <TecsBox Title="DevOps / Testing / QA">
+            <DevOps_Testing_QA_Tecs />
+        </TecsBox>
+    </div>
+</section>
