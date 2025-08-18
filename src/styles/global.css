@@ -3,7 +3,8 @@
 @theme {
   --color-light-green: #63c565;
   --color-black-ground: #111116;
-  --color-black-heaven: #363636;
+  --color-dark-green: #63c565;
+  --color-yellow-green: #a8e6a2;
   --color-gray-label: #333336;
   --color-secondary-text: #aaaaaa;
   --font-Primary: "Mulish Variable", sans-serif;
