@@ -1,15 +1,64 @@
 ---
 import SecondLayout from "../layouts/SecondLayout.astro"
 import MainWebSection from "../pages/components/MainWebSection.astro"
+import { IoIosArrowForward } from "react-icons/io"
 ---
 
 <SecondLayout>
-    <MainWebSection 
-    year="2024" title="BookMyFit" 
-    urlImage="" 
-    description="Web orientada a la gestión de reservas de espacios deportivos en una sede especializada. El sistema permite a los usuarios registrarse, elegir una disciplina deportiva entre una variedad disponible y agendar horarios según la disponibilidad del lugar." 
-    urlRepo="https://github.com/Jerimonski/Crud_Front-end.git" 
+  <MainWebSection
+    year="2024"
+    title="BookMyFit"
+    urlImage=""
+    description="Web orientada a la gestión de reservas de espacios deportivos en una sede especializada. El sistema permite a los usuarios registrarse, elegir una disciplina deportiva entre una variedad disponible y agendar horarios según la disponibilidad del lugar."
+    urlRepo="https://github.com/Jerimonski/Crud_Front-end.git"
     rol="Front-end"
-    client="Proyecto personal">
-    </MainWebSection>
+    client="Proyecto personal"
+  >
+    <div
+      class="[&>span]:bg-black-ground [&>span]:border [&>span]:border-[#464646]"
+    >
+      <span class="rounded-4xl px-4 py-1">HTML</span>
+      <span class="rounded-4xl px-4 py-1">Javascript</span>
+      <span class="rounded-4xl px-4 py-1">React</span>
+      <span class="rounded-4xl px-4 py-1">TailwindCSS</span>
+      <span class="rounded-4xl px-4 py-1">Node.js</span>
+      <span class="rounded-4xl px-4 py-1">PostgreSQL</span>
+      <span class="rounded-4xl px-4 py-1">Jenkins</span>
+      <span class="rounded-4xl px-4 py-1">SonarQube</span>
+      <span class="rounded-4xl px-4 py-1">Vite</span>
+    </div>
+    <div class="py-16 space-y-12">
+      <h2 class="text-4xl">Descripcion general</h2>
+      <p class="text-secondary-text">
+        Web orientada a la gestión de reservas de espacios deportivos en una
+        sede especializada. El sistema permite a los usuarios registrarse,
+        elegir una disciplina deportiva entre una variedad disponible y agendar
+        horarios según la disponibilidad del lugar.
+      </p>
+    </div>
+    <dir class="py-16 space-y-12">
+      <h2 class="text-4xl">Diseno Web</h2>
+      <span>IMAGENES DE LA PAGINA EN CUESTION</span>
+    </dir>
+    <dir class="py-16 space-y-12">
+      <h2 class="text-4xl">Caracteristicas</h2>
+      <l class="text-secondary-text [&>li>span]:text-white">
+        <li><span>qwdwqd</span>: blalblalblbalbal</li>
+        <li><span>qwdwqd</span>: blalblalblbalbal</li>
+        <li><span>qwdwqd</span>: blalblalblbalbal</li>
+        <li><span>qwdwqd</span>: blalblalblbalbal</li>
+        <li><span>qwdwqd</span>: blalblalblbalbal</li>
+      </l>
+    </dir>
+    <a
+      href="/ShoesStore"
+      class="absolute right-0 flex items-center gap-10 cursor-pointer border border-[#464646] rounded-lg p-2"
+    >
+      <p class="flex flex-col text-left cursor-pointer">
+        <span class="text-secondary-text">Next</span>
+        ShoesStore
+      </p>
+      <IoIosArrowForward />
+    </a>
+  </MainWebSection>
 </SecondLayout>
