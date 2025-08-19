@@ -1,11 +1,15 @@
 ---
 import SecondLayout from "../layouts/SecondLayout.astro"
+import MainWebSection from "../pages/components/MainWebSection.astro"
 ---
 
 <SecondLayout>
-  <main class="w-[1120px] mx-auto py-20">
-    <img src="./images/aora.jpg" alt="" />
-    <h1 class="text-2xl font-semibold">BookMyFit</h1>
-    <div>AAAAAAAAAAAAA</div>
-  </main>
+    <MainWebSection 
+    year="2024" title="BookMyFit" 
+    urlImage="" 
+    description="Web orientada a la gestión de reservas de espacios deportivos en una sede especializada. El sistema permite a los usuarios registrarse, elegir una disciplina deportiva entre una variedad disponible y agendar horarios según la disponibilidad del lugar." 
+    urlRepo="https://github.com/Jerimonski/Crud_Front-end.git" 
+    rol="Front-end"
+    client="Proyecto personal">
+    </MainWebSection>
 </SecondLayout>
