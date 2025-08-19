@@ -1,5 +1,5 @@
 ---
-const { initialText, finalText } = Astro.props;
+const { initialText, finalText, url,  target } = Astro.props;
 ---
 
 <button class="relative overflow-hidden px-7 py-3 text-white font-bold group hover:scale-105 duration-300 rounded-4xl border cursor-pointer">
@@ -7,7 +7,7 @@ const { initialText, finalText } = Astro.props;
     {initialText}
   </a>
   <span class="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-all duration-300 rounded" />
-  <a href="/Contactame" class="absolute inset-0 flex items-center justify-center text-black font-bold translate-y-full group-hover:translate-y-0 transition-all duration-300">
+  <a href={url} {target} class="absolute inset-0 flex items-center justify-center text-black font-bold translate-y-full group-hover:translate-y-0 transition-all duration-300">
     {finalText}
   </a>
 </button>
