@@ -8,7 +8,7 @@ import { IoIosArrowForward } from "react-icons/io"
   <MainWebSection
     year="2024"
     title="BookMyFit"
-    urlImage=""
+    urlImage="./public/projects/BookMyFit.jpg"
     description="Web orientada a la gestión de reservas de espacios deportivos en una sede especializada. El sistema permite a los usuarios registrarse, elegir una disciplina deportiva entre una variedad disponible y agendar horarios según la disponibilidad del lugar."
     urlRepo="https://github.com/Jerimonski/Crud_Front-end.git"
     rol="Front-end"
@@ -29,30 +29,31 @@ import { IoIosArrowForward } from "react-icons/io"
     </div>
     <div class="py-16 space-y-12">
       <h2 class="text-4xl">Descripcion general</h2>
-      <p class="text-secondary-text">
-        Web orientada a la gestión de reservas de espacios deportivos en una
-        sede especializada. El sistema permite a los usuarios registrarse,
-        elegir una disciplina deportiva entre una variedad disponible y agendar
-        horarios según la disponibilidad del lugar.
+      <p class="text-secondary-text text-lg">
+        Desarrollé una plataforma de reservas deportivas que permite el registro de usuarios, 
+        la elección de deportes y el agendamiento mediante un calendario interactivo. 
+        Incluye un panel administrativo para crear deportes con información detallada 
+        y la generación de reportes en Excel con las horas reservadas. El back-end se implementó 
+        en Node.js con una API REST y arquitectura modular (DTO/DAO/Controllers), utilizando 
+        JWT para la autenticación y control de roles, además de una base de datos PostgreSQL 
+        para la gestión de usuarios, horarios y reservas.
       </p>
     </div>
-    <dir class="py-16 space-y-12">
-      <h2 class="text-4xl">Diseno Web</h2>
-      <span>IMAGENES DE LA PAGINA EN CUESTION</span>
-    </dir>
-    <dir class="py-16 space-y-12">
+    <dir class="pb-16 space-y-12">
       <h2 class="text-4xl">Caracteristicas</h2>
-      <l class="text-secondary-text [&>li>span]:text-white">
-        <li><span>qwdwqd</span>: blalblalblbalbal</li>
-        <li><span>qwdwqd</span>: blalblalblbalbal</li>
-        <li><span>qwdwqd</span>: blalblalblbalbal</li>
-        <li><span>qwdwqd</span>: blalblalblbalbal</li>
-        <li><span>qwdwqd</span>: blalblalblbalbal</li>
+      <l class="text-secondary-text [&>li>span]:text-white space-y-4">
+        <li><span>Registro e inicio de sesión de usuarios</span>: Creación de cuentas con permisos diferenciados para usuarios y administradores.</li>
+        <li><span>Calendario interactivo de reservas</span>: Visualización de disponibilidad y agendamiento de sesiones deportivas en tiempo real.</li>
+        <li><span>Panel de administración</span>: Gestión de deportes con detalles como valor por hora, entrenador, título y descripción.</li>
+        <li><span>Generación de reportes en Excel</span>: Exportación automática de horas reservadas para un control organizado.</li>
+        <li><span>Arquitectura modular de la API</span>: Back-end estructurado con DTOs, DAOs y Controllers para escalabilidad y mantenibilidad.</li>
+        <li><span>Autenticación y autorización con JWT</span>: Control de accesos mediante tokens para mayor seguridad.</li>
+        <li><span>CI/CD y control de calidad de código</span>: Integración continua con Jenkins y verificación de buenas prácticas mediante SonarQube.</li>
       </l>
     </dir>
     <a
       href="/ShoesStore"
-      class="absolute right-0 flex items-center gap-10 cursor-pointer border border-[#464646] rounded-lg p-2"
+      class="absolute right-0 flex items-center hover:border-white duration-300 gap-10 cursor-pointer border border-[#464646] rounded-lg p-2"
     >
       <p class="flex flex-col text-left cursor-pointer">
         <span class="text-secondary-text">Next</span>

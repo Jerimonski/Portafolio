@@ -6,7 +6,7 @@ const { year, title, description, urlImage, urlRepo, rol, client } = Astro.props
 
 <main class="w-[1120px] mx-auto py-20 relative">
   <section>
-    <div class="flex justify-between items-center text-secondary-text py-8">
+    <div class="flex justify-between items-center text-secondary-text py-10">
       <a
         href="/#Proyectos"
         class="flex items-center gap-2 p-1 hover:text-white duration-300"
@@ -16,7 +16,7 @@ const { year, title, description, urlImage, urlRepo, rol, client } = Astro.props
       <span class="border border-gray-500 p-1 text-sm">{year}</span>
     </div>
     <img class="rounded-2xl" src={urlImage} alt=`${title} web Image` />
-    <article class="flex flex-col py-8">
+    <article class="flex flex-col py-10">
       <div class="flex justify-between items-center">
         <h1 class="text-5xl font-semibold">{title}</h1>
         <ButtonAnimateRotate
