@@ -18,7 +18,7 @@ const { year, title, description, urlImage, urlRepo, rol, client } = Astro.props
     <img class="rounded-2xl" src={urlImage} alt=`${title} web Image` />
     <article class="flex flex-col py-10">
       <div class="flex justify-between items-center">
-        <h1 class="text-5xl font-semibold">{title}</h1>
+        <h1 class="text-5xl font-semibold font-Primary">{title}</h1>
         <ButtonAnimateRotate
           target={`target="_blank"`}
           initialText="Ver repositorio"
