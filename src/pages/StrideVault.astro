@@ -1,0 +1,57 @@
+---
+import SecondLayout from "../layouts/SecondLayout.astro"
+import MainWebSection from "../pages/components/MainWebSection.astro"
+import ButtonNext from "./components/ButtonNext.astro"
+import ButtonPrev from "./components/ButtonPrev.astro"
+import OverviewSection from "./components/OverviewSection.astro"
+import Features from "./components/Features.astro"
+---
+<SecondLayout>
+  <MainWebSection
+    year="2024"
+    title="StrideVault"
+    urlImage="./public/projects/StrideVault/StrideVaultHome.jpg"
+    description="Landing page interactiva enfocada en la presentación de zapatillas urbanas como Nike, Jordan y otras marcas. El usuario puede explorar distintos modelos, navegar entre páginas y acceder a una vista detallada de cada producto."
+    urlRepo="https://github.com/Jerimonski/StrideVault.git"
+    rol="Front-end"
+    client="Proyecto personal"
+  >
+    <div
+      class="[&>span]:bg-black-ground [&>span]:border [&>span]:border-[#464646]"
+    >
+      <span class="rounded-4xl px-4 py-1">HTML</span>
+      <span class="rounded-4xl px-4 py-1">Javascript</span>
+      <span class="rounded-4xl px-4 py-1">React</span>
+      <span class="rounded-4xl px-4 py-1">TailwindCSS</span>
+      <span class="rounded-4xl px-4 py-1">Vite</span>
+    </div>
+    <OverviewSection>
+        Landing page interactiva para la presentación de 
+        zapatillas urbanas, que permite a los usuarios explorar distintos 
+        modelos, aplicar filtros de búsqueda y visualizar información obtenida 
+        dinámicamente desde una API. Cada producto 
+        cuenta con una sección de detalles, donde se muestra información ampliada 
+        junto a un selector de tallas y la opción de agregar al carrito. El sistema 
+        de carrito permite revisar los productos seleccionados y calcular automáticamente 
+        el total de la compra, ofreciendo una experiencia de navegación y compra sencilla.
+    </OverviewSection>
+    <div class="pb-16 space-y-12">
+      <h2 class="text-4xl">Imagenes</h2>
+      <div class="grid grid-cols-2">
+          <img src="./public/projects/StrideVault/StrideVaultTypesOf.jpg" alt="StrideVaultTypesOf">
+          <img class="opacity-80" src="./public/projects/StrideVault/StrideVaultShoes.jpg" alt="StrideVaultShoes">
+      </div>
+      <img class="opacity-80 mx-auto"
+      src="./public/projects/StrideVault/StrideVaultFooter.jpg" alt="">
+    </div>
+    <Features>
+        <li><span>Listado dinámico de productos</span>: Las zapatillas se obtienen mediante fetch a una API, mostrando todos los datos en tiempo real.</li>
+        <li><span>Vista detallada de cada producto</span>: Implementada con React Context, muestra información ampliada, selector de tallas y opción de agregar al carrito.</li>
+        <li><span>Carrito de compras funcional</span>: Permite revisar productos seleccionados y visualizar el total de la compra de manera inmediata.</li>
+    </Features>
+    <div class="flex justify-between">
+        <ButtonPrev Text="BookMyFit" />
+        <ButtonNext Text="BonsaiPractice"/>
+    </div>
+  </MainWebSection>
+</SecondLayout>
