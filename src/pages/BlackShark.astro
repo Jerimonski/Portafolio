@@ -1,7 +1,47 @@
 ---
 import SecondLayout from "../layouts/SecondLayout.astro"
+import MainWebSection from "../pages/components/MainWebSection.astro"
+import ButtonNext from "./components/ButtonNext.astro"
+import ButtonPrev from "./components/ButtonPrev.astro"
+import OverviewSection from "./components/OverviewSection.astro"
+import Features from "./components/Features.astro"
 ---
 
 <SecondLayout>
-    <div>AAAAAAAAAAAAA</div>
+  <MainWebSection
+    year="2024"
+    title="BlackShark"
+    urlImage="./public/projects/StrideVault/StrideVaultHome.jpg"
+    description="Web orientada a un cliente real del rubro fotográfico, en la que mi aporte consistió en el desarrollo de nuevas interfaces gráficas y la refactorización del código para mejorar su rendimiento y organización."
+    urlRepo="https://github.com/Jerimonski/StrideVault.git"
+    rol="Front-end"
+    client="Proyecto personal"
+  >
+    <div
+      class="[&>span]:bg-black-ground [&>span]:border [&>span]:border-[#464646]"
+    >
+      <span class="rounded-4xl px-4 py-1">HTML</span>
+      <span class="rounded-4xl px-4 py-1">Javascript</span>
+      <span class="rounded-4xl px-4 py-1">React</span>
+      <span class="rounded-4xl px-4 py-1">TypeScript</span>
+      <span class="rounded-4xl px-4 py-1">TailwindCSS</span>
+      <span class="rounded-4xl px-4 py-1">Vite</span>
+    </div>
+    <OverviewSection>
+      TODAVIA NO TIENE TEXTOOOOOOOOOOOOOOOOOOOOOOO
+    </OverviewSection>
+    <div class="pb-16 space-y-12">
+      <h2 class="text-4xl">Imagenes</h2>
+    </div>
+    <Features>
+      <li>
+        <span>Listado dinámico de productos</span>: Las zapatillas se obtienen
+        mediante fetch a una API, mostrando todos los datos en tiempo real.
+      </li>
+    </Features>
+    <div class="flex justify-between">
+      <ButtonPrev Text="BookMyFit" />
+      <ButtonNext Text="StrideVault" />
+    </div>
+  </MainWebSection>
 </SecondLayout>
