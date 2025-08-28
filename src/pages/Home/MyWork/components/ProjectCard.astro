@@ -4,7 +4,7 @@ const { Title, Rol, Year, image, repoUrl } = Astro.props;
 <div class="group-hover:opacity-40 hover:opacity-100 duration-300 hover:scale-110 py-6 space-y-2">
     <figure class=`rounded-3xl`>
         <a href=`/${Title}`>
-            <img src={image} alt="Imagen BookMyFit">
+            <img class="hover:scale-110 duration-300" src={image} alt="Imagen BookMyFit">
         </a>
     </figure>
     <article class="space-y-2 py-4">
