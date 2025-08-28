@@ -1,10 +1,10 @@
 ---
-const { Title, Rol, Year, ColorBg } = Astro.props;
+const { Title, Rol, Year, image, repoUrl } = Astro.props;
 ---
-<div class="group-hover:opacity-40 hover:opacity-100 duration-300 hover:scale-110 py-6">
-    <figure class=`${ColorBg} rounded-3xl`>
+<div class="group-hover:opacity-40 hover:opacity-100 duration-300 hover:scale-110 py-6 space-y-2">
+    <figure class=`rounded-3xl`>
         <a href=`/${Title}`>
-            <img src="/images/aora.jpg" alt="Imagen BookMyFit">
+            <img src={image} alt="Imagen BookMyFit">
         </a>
     </figure>
     <article class="space-y-2 py-4">
@@ -12,14 +12,10 @@ const { Title, Rol, Year, ColorBg } = Astro.props;
         <p class="flex justify-between text-sm text-secondary-text">{Rol}<span>{Year}</span></p> 
     </article>
     <slot />
-    <div class="flex justify-between gap-8 [&>button]:py-2 [&>button]:rounded-xl group">
-        <button 
-        class="font-extrabold text-lg bg-[#27aa59] w-1/2 cursor-pointer group-hover:opacity-40 hover:opacity-100 duration-300">
-            Demo
-        </button>
-        <button 
-        class="font-extrabold text-lg bg-[#17491a] w-1/2 cursor-pointer group-hover:opacity-40 hover:opacity-100 duration-300">
-            Repositorio
-    </button>
+    <div class="flex text-center [&>a]:py-2 [&>a]:rounded-xl">
+        <a href={repoUrl} target="_blank"
+        class="font-extrabold text-lg bg-darker-green w-full cursor-pointer group-hover:opacity-40 hover:opacity-100 duration-300">
+            Ver Repositorio
+        </a>
     </div>
 </div>

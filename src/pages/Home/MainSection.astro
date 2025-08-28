@@ -1,18 +1,18 @@
 ---
-import ButtonAnimateRotate from "../../ui/ButtonAnimateRotate.astro"
+import { BsMouse } from "react-icons/bs";
+import ButtonCv from "../../ui/ButtonCv.astro";
 ---
 <section class="flex flex-col items-center h-[880px] w-[1120px] py-48 relative">
     <div class="flex gap-12">
-        <div>
+        <div class="relative">
             <img
-            class="rounded-b-[60px] size-80 max-w-[500px]" 
-            src="https://media.licdn.com/dms/image/v2/D4E03AQGgdAIGpexvVg/profile-displayphoto-shrink_200_200/B4EZeef4MUHgAY-/0/1750710846700?e=1757548800&v=beta&t=siSix4DN5XUw8ypyTxAu7uzzacTDG8kOVpFqzoIrWNI" alt="Foto Jeremy">
-            <button class="relative top-[-30px] left-50">Lets talk</button>
+            class="rounded-[120px] size-100 top-0 max-w-[600px]" 
+            src="./images/IAM.png" alt="Foto Jeremy">
         </div>
-        <div class="space-y-2">
-            <h1 class="text-6xl font-semibold text-left font-Primary">
-                Frontend Developer con
-                <span class="text-light-green">nociones en backend</span>
+        <div class="space-y-4">
+            <h1 class="text-6xl text-light-green font-semibold text-left font-Primary">
+                Frontend Developer
+                <span class="text-white">con nociones en backend</span>
             </h1>
             <span class="block text-4xl font-Primary">Jeremy Amaru</span>
             <p class="max-w-[550px] py-2">
@@ -20,8 +20,8 @@ import ButtonAnimateRotate from "../../ui/ButtonAnimateRotate.astro"
                 TailwindCSS y buenas prácticas de UX/UI para 
                 soluciones efectivas y funcionales.
             </p>
-            <ButtonAnimateRotate initialText="CV" finalText="CV" />
+            <ButtonCv initialText="CV" finalText="CV" />
         </div>
     </div>
-    <span class="animate-bounce absolute bottom-0 py-12">ICONO FLOTANDO DE SCROLL</span>
+    <div class="animate-bounce absolute bottom-0 py-12"><BsMouse size={40} /></div>
 </section>
