@@ -1,39 +1,42 @@
 ---
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
-import "../styles/global.css";
+import "../styles/global.css"
 ---
+
 <!doctype html>
-<html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="/DinomonArmado.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Jeremy Amaru | Desarrollador Web</title>
-	</head>
-	<body>
-		<Header/>
-		<slot />
-		<Footer />
-	</body>
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' href='/DinomonArmado.ico' />
+    <meta name='generator' content={Astro.generator} />
+    <title>Jeremy Amaru | Desarrollador Web</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
 </html>
 
 <style>
-	html{
-		scroll-behavior: smooth;
-		background-color: rgb(11, 11, 13);
-		color: white;
-	},
-	body {
-		margin: auto;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	},
-	@media (prefers-reduced-motion: reduce) {
-		html{
-			scroll-behavior: auto;
-		}
-	}
+  html {
+    scroll-behavior: smooth;
+    background-color: rgb(11, 11, 13);
+    color: white;
+  }
+  ,
+  body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  ,
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
 </style>
