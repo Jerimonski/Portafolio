@@ -1,44 +1,55 @@
 ---
-import ButtonAnimateRotate from '../ui/ButtonAnimateRotate.astro'
-import { FaLinkedinIn } from "react-icons/fa";
-import { CgMail } from "react-icons/cg";
-import { FaGithub } from "react-icons/fa";
+import ButtonAnimateRotate from "../ui/ButtonAnimateRotate.astro"
+import { FaLinkedinIn } from "react-icons/fa"
+import { CgMail } from "react-icons/cg"
+import { FaGithub } from "react-icons/fa"
 ---
 
-<footer class="w-[1120px] mx-auto pt-10">
-    <div class="bg-black-ground space-y-4 text-center py-22 rounded-4xl">
-        <article class="flex items-center mx-auto gap-2 w-48 p-2 rounded-4xl bg-[#0d2b0f]">
-            <hr class="animate-ping bg-[#98dd99] size-2 rounded-full">
-            <hr class="absolute bg-[#98dd99] size-2 rounded-full opacity-70">
-            <h4 class="text-sm">Disponible para trabajo</h4>
-        </article>
-        <h2 class="text-6xl pb-6 font-semibold font-Primary">Vamos a crear tu<span class="block">nueva gran idea.</span></h2>
-        <ButtonAnimateRotate initialText="Contáctame" finalText="Contáctame"  url="/Contactame"/>
-    </div>
-    <div class="flex justify-between py-4">
-        <a href="/" class="bg-black-ground px-2 rounded-2xl flex items-center">JA</a>
-        <nav class="flex gap-2 items-center group [&>a]:p-2">
-            <a 
-            class="transition-opacity duration-300 ease-in-out
-            group-hover:opacity-40 hover:opacity-100"
-            target="_blank" href="https://www.linkedin.com/in/jeremy-amaru"
-            aria-label="LinkedIn de Jeremy"
-            ><FaLinkedinIn size="20" /></a>
-            <a
-            class="transition-opacity duration-300 ease-in-out
-            group-hover:opacity-40 hover:opacity-100"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=jeremyidelamaruayaviri@gmail.com&su=Hola%20Jeremy&body=Hola%2C%20quiero%20contactarte%20desde%20tu%20web"
-            target="_blank"
-            aria-label="Enviar correo a Jeremy"
-            >
-            <CgMail size="30"/>
-            </a>
-            <a 
-            class="transition-opacity duration-300 ease-in-out
-            group-hover:opacity-40 hover:opacity-100"
-            target="_blank" href="https://github.com/Jerimonski"
-            aria-label="GitHub de Jeremy"
-            ><FaGithub size="25"/></a>
-        </nav>
-    </div>
+<footer class='w-[1120px] mx-auto pt-10 max-lg:w-full max-lg:px-8'>
+  <div class='bg-black-ground space-y-4 text-center py-22 rounded-4xl'>
+    <article
+      class='flex items-center mx-auto gap-2 w-48 p-2 rounded-4xl bg-[#0d2b0f]'
+    >
+      <hr class='animate-ping bg-[#98dd99] size-2 rounded-full' />
+      <hr class='absolute bg-[#98dd99] size-2 rounded-full opacity-70' />
+      <h4 class='text-sm'>Disponible para trabajo</h4>
+    </article>
+    <h2 class='text-6xl pb-6 font-semibold font-Primary'>
+      Vamos a crear tu<span class='block'>nueva gran idea.</span>
+    </h2>
+    <ButtonAnimateRotate
+      initialText='Contáctame'
+      finalText='Contáctame'
+      url='/Contactame'
+    />
+  </div>
+  <div class='flex justify-between py-4'>
+    <a href='/' class='bg-black-ground px-2 rounded-2xl flex items-center'>JA</a
+    >
+    <nav class='flex gap-2 items-center group [&>a]:p-2'>
+      <a
+        class='transition-opacity duration-300 ease-in-out
+            group-hover:opacity-40 hover:opacity-100'
+        target='_blank'
+        href='https://www.linkedin.com/in/jeremy-amaru'
+        aria-label='LinkedIn de Jeremy'><FaLinkedinIn size='20' /></a
+      >
+      <a
+        class='transition-opacity duration-300 ease-in-out
+            group-hover:opacity-40 hover:opacity-100'
+        href='https://mail.google.com/mail/?view=cm&fs=1&to=jeremyidelamaruayaviri@gmail.com&su=Hola%20Jeremy&body=Hola%2C%20quiero%20contactarte%20desde%20tu%20web'
+        target='_blank'
+        aria-label='Enviar correo a Jeremy'
+      >
+        <CgMail size='30' />
+      </a>
+      <a
+        class='transition-opacity duration-300 ease-in-out
+            group-hover:opacity-40 hover:opacity-100'
+        target='_blank'
+        href='https://github.com/Jerimonski'
+        aria-label='GitHub de Jeremy'><FaGithub size='25' /></a
+      >
+    </nav>
+  </div>
 </footer>
