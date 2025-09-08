@@ -1,6 +1,6 @@
 ---
 import { TbUfo } from "react-icons/tb"
-import { HiMenu, HiX } from "react-icons/hi" // íconos hamburguesa y cerrar
+import { HiMenu, HiX } from "react-icons/hi"
 ---
 
 <header class='w-full fixed z-50'>
@@ -22,12 +22,12 @@ import { HiMenu, HiX } from "react-icons/hi" // íconos hamburguesa y cerrar
       >
       <a
         class='group-hover:opacity-40 hover:opacity-100 duration-300'
-        href='/#Contactame'>Contáctame</a
+        href='/Contactame'>Contáctame</a
       >
     </ul>
     <a
       href='Sanctuary'
-      class='hidden md:block animation-ping duration-100 hover:rotate-30 p-2'
+      class='cursor-default md:block duration-100 hover:rotate-30 p-2'
     >
       <TbUfo size={30} />
     </a>
@@ -66,8 +66,13 @@ import { HiMenu, HiX } from "react-icons/hi" // íconos hamburguesa y cerrar
     <a class='hover:text-blue-400 duration-200' href='/'>Home</a>
     <a class='hover:text-blue-400 duration-200' href='/#Sobre-mi'>Sobre mí</a>
     <a class='hover:text-blue-400 duration-200' href='/#Proyectos'>Proyectos</a>
-    <a class='hover:text-blue-400 duration-200' href='/#Contactame'
-      >Contáctame</a
+    <a class='hover:text-blue-400 duration-200' href='/Contactame'>Contáctame</a
     >
+    <a
+      href='Sanctuary'
+      class='opacity-0 cursor-default absolute bottom-0 right-0 text-xs bg-amber-400'
+    >
+      Hanni Secret Sanctuary
+    </a>
   </nav>
 </header>
