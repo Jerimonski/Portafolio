@@ -4,31 +4,30 @@ import MainWebSection from "../pages/components/MainWebSection.astro"
 import ButtonNext from "./components/ButtonNext.astro"
 import OverviewSection from "./components/OverviewSection.astro"
 import Features from "./components/Features.astro"
+import TechsBar from "./components/TechsBar.astro"
 ---
 
 <SecondLayout>
   <MainWebSection
-    year="2025"
-    title="BookMyFit"
-    urlImage="/projects/BookMyFit.jpg"
-    description="Web orientada a la gestión de reservas de espacios deportivos en una sede especializada. El sistema permite a los usuarios registrarse, elegir una disciplina deportiva entre una variedad disponible y agendar horarios según la disponibilidad del lugar."
-    urlRepo="https://github.com/Jerimonski/Crud_Front-end.git"
-    rol="Front-end"
-    client="Proyecto personal"
+    year='2025'
+    title='BookMyFit'
+    urlImage='/projects/BookMyFit.jpg'
+    description='Web orientada a la gestión de reservas de espacios deportivos en una sede especializada. El sistema permite a los usuarios registrarse, elegir una disciplina deportiva entre una variedad disponible y agendar horarios según la disponibilidad del lugar.'
+    urlRepo='https://github.com/Jerimonski/Crud_Front-end.git'
+    rol='Front-end'
+    client='Proyecto personal'
   >
-    <div
-      class="[&>span]:bg-black-ground [&>span]:border [&>span]:border-[#464646]"
-    >
-      <span class="rounded-4xl px-4 py-1">HTML</span>
-      <span class="rounded-4xl px-4 py-1">Javascript</span>
-      <span class="rounded-4xl px-4 py-1">React</span>
-      <span class="rounded-4xl px-4 py-1">TailwindCSS</span>
-      <span class="rounded-4xl px-4 py-1">Node.js</span>
-      <span class="rounded-4xl px-4 py-1">PostgreSQL</span>
-      <span class="rounded-4xl px-4 py-1">Jenkins</span>
-      <span class="rounded-4xl px-4 py-1">SonarQube</span>
-      <span class="rounded-4xl px-4 py-1">Vite</span>
-    </div>
+    <TechsBar>
+      <span>HTML</span>
+      <span>Javascript</span>
+      <span>React</span>
+      <span>TailwindCSS</span>
+      <span>Node.js</span>
+      <span>PostgreSQL</span>
+      <span>Jenkins</span>
+      <span>SonarQube</span>
+      <span>Vite</span>
+    </TechsBar>
     <OverviewSection>
       Desarrollé una plataforma de reservas deportivas que permite el registro
       de usuarios, la elección de deportes y el agendamiento mediante un
@@ -69,8 +68,8 @@ import Features from "./components/Features.astro"
         con Jenkins y verificación de buenas prácticas mediante SonarQube.
       </li>
     </Features>
-    <div class="absolute right-0">
-      <ButtonNext Text="BlackShark" />
+    <div class='absolute right-0 max-lg:pr-8'>
+      <ButtonNext Text='BlackShark' />
     </div>
   </MainWebSection>
 </SecondLayout>

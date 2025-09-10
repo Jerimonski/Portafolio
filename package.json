@@ -3,12 +3,13 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "npx astro dev --remote",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/db": "^0.17.1",
     "@astrojs/react": "^4.3.0",
     "@fontsource-variable/mulish": "^5.2.6",
     "@fontsource-variable/public-sans": "^5.2.6",

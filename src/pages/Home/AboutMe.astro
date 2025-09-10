@@ -1,19 +1,27 @@
-<section class="w-[1120px] py-44" id="Sobre-mi">
-    <article class="space-y-4 pb-16">
-        <h3 class="text-light-green font-Primary text-2xl">Mi historia</h3>
-        <h2 class="font-Primary font-semibold text-6xl">Acerca de mí</h2>
-        <p class="text-secondary-text">
-            Aquí un breve relato de mis estudios y motivaciones.
-        </p>
-    </article>
-    <p class="text-3xl/12">
-        Desarrollador <span class="text-dark-green">frontend</span> con nociones de 
-        <span class="text-dark-green">backend</span>, especializado en crear 
-        interfaces web modernas, funcionales y escalables. <br> Formado en la Universidad 
-        de Tarapacá (UTA), Chile, complementé mis estudios con cursos, certificados en 
-        programación y diseño web. Mi motivación es <span class="text-yellow-green">liderar</span>, 
-        cultivando <span class="text-yellow-green">conexiones auténticas</span> 
-        que potencien la interacción, el <span class="text-yellow-green">compromiso</span> 
-        y los resultados del equipo.
-    </p>
+---
+import SectionTitle from "../components/SectionTitle.astro"
+---
+
+<section
+  class='w-[1120px] py-36 max-lg:w-full max-lg:py-24 max-lg:px-8'
+  id='Sobre-mi'
+>
+  <SectionTitle
+    Title='Acerca de mí'
+    SubTitle='Mi historia'
+    Description='Aquí un breve relato de mis estudios y motivaciones.'
+  />
+  <p class='text-3xl/12 max-sm:text-2xl'>
+    Desarrollador <span class='text-dark-green'>frontend</span> con nociones de
+    <span class='text-dark-green'>backend</span>, especializado en crear
+    interfaces web modernas, funcionales y escalables. <br /> Formado en la Universidad
+    de Tarapacá (UTA), Chile, complementé mis estudios con cursos, certificados en
+    programación y diseño web. Mi motivación es <span class='text-yellow-green'
+      >liderar</span
+    >, cultivando <span class='text-yellow-green'>conexiones auténticas</span>
+    que potencien la interacción, el <span class='text-yellow-green'
+      >compromiso</span
+    >
+    y los resultados del equipo.
+  </p>
 </section>

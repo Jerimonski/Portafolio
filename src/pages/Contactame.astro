@@ -4,52 +4,82 @@ import ButtonAnimateRotate from "../ui/ButtonAnimateRotate.astro"
 ---
 
 <ContactLayout>
-   <section class="w-[1120px] py-44 mx-auto">
-      <article class="space-y-4 pb-16">
-         <h3 class="text-light-green font-Primary text-2xl">Contáctate conmigo</h3>
-         <h2 class="font-Primary font-semibold text-6xl w-[700px]">Vamos a crear un proyecto juntos</h2>
-      </article>
-      <div class="grid grid-cols-2 gap-8">
-         <form 
-            name="contact" 
-            method="POST" 
-            data-netlify="true"
-            class="flex flex-col gap-2 [&>label>input]:border-gray-label [&>label>input]:w-full [&>label>input]:rounded-xl"
-            >
-            <input type="hidden" name="form-name" value="contact" />
-            <label>
-               Nombre:
-               <input type="text" name="name" required class="border p-2 my-2 rounded" />
-            </label>
-            <label>
-               Correo:
-               <input type="email" name="email" required class="border p-2 my-2 rounded" />
-            </label>
-            <label>
-               Mensaje:
-               <textarea name="message" required class="border p-2 min-h-24 my-2 w-full border-gray-label rounded-2xl"></textarea>
-            </label>
-            <div>
-               <ButtonAnimateRotate initialText="Enviar" finalText="Enviar" target={`type="submit"`} />
-            </div>
-         </form>
-         <div class="h-max bg-black-ground rounded-2xl place-items-center flex flex-col space-y-4 p-4 text-center">
-            <article class="flex items-center gap-2 w-48 p-2 rounded-4xl bg-[#0d2b0f]">
-               <hr class="animate-ping bg-[#98dd99] size-2 rounded-full">
-               <hr class="absolute bg-[#98dd99] size-2 rounded-full opacity-70">
-               <h4 class="text-sm">Disponible para trabajo</h4>
-            </article>
-            <img class="rounded-full size-48" src="/shining.jpg" alt="shining img">
-            <p>
-               Mi bandeja siempre está abierta, ya sea para proyectos o solo para saludar.
-               <span>Los mejores proyectos empiezan con un mensaje...</span>
-            </p>
-            <cite class="text-secondary-text">“los errores no son fracasos, son oportunidades de mejora”
-               <span class="block">
-                  Jeremy Amaru
-               </span>
-            </cite>
-         </div>
+  <section
+    class='w-[1120px] py-44 mx-auto flex flex-col max-lg:w-full max-lg:px-8'
+  >
+    <article class='space-y-4 pb-16 max-lg:text-wrap'>
+      <h3 class='text-light-green font-Primary text-2xl'>Contáctate conmigo</h3>
+      <h2 class='font-Primary font-semibold text-6xl w-[700px] max-lg:w-full'>
+        Vamos a crear un proyecto juntos
+      </h2>
+    </article>
+    <div class='grid grid-cols-2 gap-8 max-lg:grid-cols-1'>
+      <form
+        name='contact'
+        method='POST'
+        data-netlify='true'
+        class='flex flex-col gap-2 [&>label>input]:border-gray-label [&>label>input]:w-full [&>label>input]:rounded-xl'
+      >
+        <input type='hidden' name='form-name' value='contact' />
+        <label>
+          Nombre:
+          <input
+            type='text'
+            name='name'
+            required
+            class='border p-2 my-2 rounded'
+          />
+        </label>
+        <label>
+          Correo:
+          <input
+            type='email'
+            name='email'
+            required
+            class='border p-2 my-2 rounded'
+          />
+        </label>
+        <label>
+          Mensaje:
+          <textarea
+            name='message'
+            required
+            class='border-2 p-2 min-h-24 my-2 w-full border-gray-label rounded-lg'
+          ></textarea>
+        </label>
+        <div>
+          <ButtonAnimateRotate
+            initialText='Enviar'
+            finalText='Enviar'
+            target={`type="submit"`}
+          />
+        </div>
+      </form>
+      <div
+        class='h-max bg-black-ground rounded-2xl place-items-center flex flex-col space-y-4 p-4 text-center'
+      >
+        <article
+          class='flex items-center gap-2 w-48 p-2 rounded-4xl bg-[#0d2b0f]'
+        >
+          <hr class='animate-ping bg-[#98dd99] size-2 rounded-full' />
+          <hr class='absolute bg-[#98dd99] size-2 rounded-full opacity-70' />
+          <h4 class='text-sm'>Disponible para trabajo</h4>
+        </article>
+        <img
+          class='rounded-full size-48'
+          src='/shining.jpg'
+          alt='shining img'
+        />
+        <p>
+          Mi bandeja siempre está abierta, ya sea para proyectos o solo para
+          saludar.
+          <span>Los mejores proyectos empiezan con un mensaje...</span>
+        </p>
+        <cite class='text-secondary-text'
+          >“los errores no son fracasos, son oportunidades de mejora”
+          <span class='block'> Jeremy Amaru </span>
+        </cite>
       </div>
-   </section>
+    </div>
+  </section>
 </ContactLayout>

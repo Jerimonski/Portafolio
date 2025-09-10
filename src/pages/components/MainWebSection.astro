@@ -4,36 +4,38 @@ import ButtonAnimateRotate from "../../ui/ButtonAnimateRotate.astro"
 const { year, title, description, urlImage, urlRepo, rol, client } = Astro.props
 ---
 
-<main class="w-[1120px] mx-auto py-20 relative">
+<main class='w-[1120px] mx-auto py-20 relative max-lg:w-full max-lg:px-8'>
   <section>
-    <div class="flex justify-between items-center text-secondary-text py-10">
+    <div class='flex justify-between items-center text-secondary-text py-10'>
       <a
-        href="/#Proyectos"
-        class="flex items-center gap-2 p-1 hover:text-white duration-300"
+        href='/#Proyectos'
+        class='flex items-center gap-2 p-1 hover:text-white duration-300'
       >
         <IoMdArrowRoundBack />Volver a los proyectos</a
       >
-      <span class="border border-gray-500 p-1 text-sm">{year}</span>
+      <span class='border border-gray-500 p-1 text-sm'>{year}</span>
     </div>
-    <img class="rounded-2xl" src={urlImage} alt=`${title} web Image` />
-    <article class="flex flex-col py-10">
-      <div class="flex justify-between items-center">
-        <h1 class="text-5xl font-semibold font-Primary">{title}</h1>
+    <img class='rounded-2xl' src={urlImage} alt=`${title} web Image` />
+    <article class='flex flex-col py-10'>
+      <div
+        class='flex justify-between items-center max-sm:flex-col max-sm:space-y-6'
+      >
+        <h1 class='text-5xl font-semibold font-Primary'>{title}</h1>
         <ButtonAnimateRotate
           target={`target="_blank"`}
-          initialText="Ver repositorio"
-          finalText="Ver repositorio"
+          initialText='Ver repositorio'
+          finalText='Ver repositorio'
           url={urlRepo}
         />
       </div>
-      <div class="flex w-full gap-8 py-6">
-        <p class="w-2/3 text-secondary-text">{description}</p>
-        <div class="w-1/3 flex gap-6 [&>p]:flex [&>p]:flex-col">
+      <div class='flex w-full gap-8 py-6 max-sm:flex-col'>
+        <p class='max-sm:w-full w-2/3 text-secondary-text'>{description}</p>
+        <div class='max-sm:w-full w-1/3 flex gap-6 [&>p]:flex [&>p]:flex-col'>
           <p>
             Rol:
             <span>Cliente:</span>
           </p>
-          <p class="text-secondary-text">
+          <p class='text-secondary-text'>
             {rol}
             <span>{client}</span>
           </p>

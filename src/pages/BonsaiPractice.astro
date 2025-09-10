@@ -4,59 +4,67 @@ import MainWebSection from "../pages/components/MainWebSection.astro"
 import ButtonPrev from "./components/ButtonPrev.astro"
 import OverviewSection from "./components/OverviewSection.astro"
 import Features from "./components/Features.astro"
+import TechsBar from "./components/TechsBar.astro"
 ---
 
 <SecondLayout>
   <MainWebSection
-    year="2023"
-    title="BonsaiPractice"
-    urlImage="/projects/BonsaiPractice/BonsaiPracticeHome.jpg"
-    description="Landing page de práctica enfocada en la replicación del contenido y diseño de una página existente, con el objetivo de perfeccionar habilidades de maquetación y estilo."
-    urlRepo="https://github.com/Jerimonski/Bonsai_Practice.git"
-    rol="Front-end"
-    client="Proyecto personal"
+    year='2023'
+    title='BonsaiPractice'
+    urlImage='/projects/BonsaiPractice/BonsaiPracticeHome.jpg'
+    description='Landing page de práctica enfocada en la replicación del contenido y diseño de una página existente, con el objetivo de perfeccionar habilidades de maquetación y estilo.'
+    urlRepo='https://github.com/Jerimonski/Bonsai_Practice.git'
+    rol='Front-end'
+    client='Proyecto personal'
   >
-    <div
-      class="[&>span]:bg-black-ground [&>span]:border [&>span]:border-[#464646]"
-    >
-      <span class="rounded-4xl px-4 py-1">HTML</span>
-      <span class="rounded-4xl px-4 py-1">Javascript</span>
-      <span class="rounded-4xl px-4 py-1">React</span>
-      <span class="rounded-4xl px-4 py-1">TailwindCSS</span>
-      <span class="rounded-4xl px-4 py-1">Vite</span>
-    </div>
+    <TechsBar>
+      <span>HTML</span>
+      <span>Javascript</span>
+      <span>React</span>
+      <span>TailwindCSS</span>
+      <span>Vite</span>
+    </TechsBar>
     <OverviewSection>
-      Landing page de práctica enfocada en la replicación del diseño y contenido 
-      de una página existente, desarrollada con el objetivo de perfeccionar 
-      habilidades de maquetación, estructura y estilo visual. El trabajo consistió 
-      en recrear el home a mi manera, centrándome en la disposición de los elementos, 
-      la responsividad y la fidelidad en el diseño, sin incluir funcionalidades dinámicas.
+      Landing page de práctica enfocada en la replicación del diseño y contenido
+      de una página existente, desarrollada con el objetivo de perfeccionar
+      habilidades de maquetación, estructura y estilo visual. El trabajo
+      consistió en recrear el home a mi manera, centrándome en la disposición de
+      los elementos, la responsividad y la fidelidad en el diseño, sin incluir
+      funcionalidades dinámicas.
     </OverviewSection>
-    <div class="pb-16 space-y-12">
-      <h2 class="text-4xl">Imagenes</h2>
-      <img class="opacity-80" src="/projects/BonsaiPractice/BonsaiPracticePrices.jpg" alt="BonsaiPracticePrices">
-      <img class="opacity-80" src="/projects/BonsaiPractice/BonsaiPracticeFooter.jpg" alt="BonsaiPracticeFooter">
+    <div class='pb-16 space-y-12'>
+      <h2 class='text-4xl font-Primary'>Imagenes</h2>
+      <img
+        class='opacity-80'
+        src='/projects/BonsaiPractice/BonsaiPracticePrices.jpg'
+        alt='BonsaiPracticePrices'
+      />
+      <img
+        class='opacity-80'
+        src='/projects/BonsaiPractice/BonsaiPracticeFooter.jpg'
+        alt='BonsaiPracticeFooter'
+      />
     </div>
     <Features>
       <li>
-        <span>Replicación del diseño de un sitio existente</span>: Trabajo centrado en 
-        reproducir el home con fidelidad visual.
+        <span>Replicación del diseño de un sitio existente</span>: Trabajo
+        centrado en reproducir el home con fidelidad visual.
       </li>
       <li>
-        <span>Práctica de maquetación y estilo</span>: Aplicación de estructuras 
+        <span>Práctica de maquetación y estilo</span>: Aplicación de estructuras
         limpias y ordenadas para mejorar la presentación.
       </li>
       <li>
-        <span>Enfoque en responsividad</span>: Adaptación de la página para 
+        <span>Enfoque en responsividad</span>: Adaptación de la página para
         distintos dispositivos y pantallas.
       </li>
       <li>
-        <span>Ejercicio sin funciones dinámicas</span>: Proyecto orientado 
-        al perfeccionamiento de diseño estático y front-end visual.
+        <span>Ejercicio sin funciones dinámicas</span>: Proyecto orientado al
+        perfeccionamiento de diseño estático y front-end visual.
       </li>
     </Features>
-    <div class="w-max">
-      <ButtonPrev Text="StrideVault" />
+    <div class='w-max'>
+      <ButtonPrev Text='StrideVault' />
     </div>
   </MainWebSection>
 </SecondLayout>
