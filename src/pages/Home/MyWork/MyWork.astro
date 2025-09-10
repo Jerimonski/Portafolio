@@ -1,54 +1,49 @@
 ---
+import SectionTitle from "../../components/SectionTitle.astro"
 import ProjectCard from "./components/ProjectCard.astro"
 ---
 
-<section class="w-[1120px] py-32" id="Proyectos">
-  <article class="space-y-4 pb-16">
-    <h3 class="text-light-green text-2xl flex gap-2 items-center font-Primary">
-      Mi Trabajo
-    </h3>
-    <h1 class="text-6xl font-Primary font-semibold">
-      Algunos de mis proyectos
-    </h1>
-    <p class="text-secondary-text">
-      Aquí una selección que muestra mi experiencia y los resultados obtenidos.
-    </p>
-  </article>
-  <div class="flex justify-center flex-cols-2 gap-24 group">
-    <div class="flex-grow space-y-12 w-1/2">
+<section class='w-[1120px] max-lg:w-full max-lg:px-8 py-36' id='Proyectos'>
+  <SectionTitle
+    Title='Algunos de mis proyectos'
+    SubTitle='Mi Trabajo'
+    Description='Aquí una selección que muestra mi experiencia y los resultados obtenidos.'
+  />
+  <div class='flex justify-center flex-cols-2 max-lg:flex-col gap-24 group'>
+    <div class='flex-grow space-y-12 w-1/2 max-lg:w-full max-lg:space-y-24'>
       <ProjectCard
-        Title="BookMyFit"
-        Rol="FullStack"
-        Year="2025"
-        image="/projects/BookMyFit.jpg"
-        repoUrl="https://github.com/Jerimonski/BookMyFit_Front-end.git"
+        Title='BookMyFit'
+        Rol='FullStack'
+        Year='2025'
+        image='/projects/BookMyFit.jpg'
+        repoUrl='https://github.com/Jerimonski/BookMyFit_Front-end.git'
       >
-        <p class="text-pretty">
+        <p class='text-pretty'>
           Web orientada a la gestión de reservas de espacios deportivos en una
           sede especializada. El sistema permite a los usuarios registrarse,
           elegir una disciplina deportiva entre una variedad disponible y
           agendar horarios según la disponibilidad del lugar.
         </p>
         <div
-          class="flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label"
+          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
         >
-          <span class="rounded-4xl px-4 py-1">HTML</span>
-          <span class="rounded-4xl px-4 py-1">Javascript</span>
-          <span class="rounded-4xl px-4 py-1">React</span>
-          <span class="rounded-4xl px-4 py-1">TailwindCSS</span>
-          <span class="rounded-4xl px-4 py-1">Node.js</span>
-          <span class="rounded-4xl px-4 py-1">PostgreSQL</span>
-          <span class="rounded-4xl px-4 py-1">Jenkins</span>
-          <span class="rounded-4xl px-4 py-1">SonarQube</span>
-          <span class="rounded-4xl px-4 py-1">Vite</span>
+          <span class='rounded-4xl px-4 py-1'>HTML</span>
+          <span class='rounded-4xl px-4 py-1'>Javascript</span>
+          <span class='rounded-4xl px-4 py-1'>React</span>
+          <span class='rounded-4xl px-4 py-1'>TailwindCSS</span>
+          <span class='rounded-4xl px-4 py-1'>Node.js</span>
+          <span class='rounded-4xl px-4 py-1'>PostgreSQL</span>
+          <span class='rounded-4xl px-4 py-1'>Jenkins</span>
+          <span class='rounded-4xl px-4 py-1'>SonarQube</span>
+          <span class='rounded-4xl px-4 py-1'>Vite</span>
         </div>
       </ProjectCard>
       <ProjectCard
-        Title="StrideVault"
-        Rol="Front-end"
-        Year="2023"
-        image="/projects/StrideVault/StrideVaultHome.jpg"
-        repoUrl="https://github.com/Jerimonski/StrideVault.git"
+        Title='StrideVault'
+        Rol='Front-end'
+        Year='2023'
+        image='/projects/StrideVault/StrideVaultHome.jpg'
+        repoUrl='https://github.com/Jerimonski/StrideVault.git'
       >
         <p>
           Landing page interactiva enfocada en la presentación de zapatillas
@@ -57,23 +52,25 @@ import ProjectCard from "./components/ProjectCard.astro"
           detallada de cada producto.
         </p>
         <div
-          class="flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label"
+          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
         >
-          <span class="rounded-4xl px-4 py-1">HTML</span>
-          <span class="rounded-4xl px-4 py-1">Javascript</span>
-          <span class="rounded-4xl px-4 py-1">React</span>
-          <span class="rounded-4xl px-4 py-1">Tailwind</span>
-          <span class="rounded-4xl px-4 py-1">Vite</span>
+          <span class='rounded-4xl px-4 py-1'>HTML</span>
+          <span class='rounded-4xl px-4 py-1'>Javascript</span>
+          <span class='rounded-4xl px-4 py-1'>React</span>
+          <span class='rounded-4xl px-4 py-1'>Tailwind</span>
+          <span class='rounded-4xl px-4 py-1'>Vite</span>
         </div>
       </ProjectCard>
     </div>
-    <div class="flex-grow mt-10 [&>div]:rounded-3xl space-y-12 w-1/2">
+    <div
+      class='flex-grow mt-10 [&>div]:rounded-3xl space-y-12 w-1/2 max-lg:w-full max-lg:space-y-24'
+    >
       <ProjectCard
-        Title="BlackShark"
-        Rol="Front-end"
-        Year="2024"
-        image="/projects/BlackShark/BlackSharkHome.jpg"
-        repoUrl="https://github.com/IgnacioBarraza/BlackSharkWeb.git"
+        Title='BlackShark'
+        Rol='Front-end'
+        Year='2024'
+        image='/projects/BlackShark/BlackSharkHome.jpg'
+        repoUrl='https://github.com/IgnacioBarraza/BlackSharkWeb.git'
       >
         <p>
           Web orientada a un cliente real del rubro fotográfico, en la que mi
@@ -81,22 +78,22 @@ import ProjectCard from "./components/ProjectCard.astro"
           refactorización del código para mejorar su rendimiento y organización.
         </p>
         <div
-          class="flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label"
+          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
         >
-          <span class="rounded-4xl px-4 py-1">HTML</span>
-          <span class="rounded-4xl px-4 py-1">Javascript</span>
-          <span class="rounded-4xl px-4 py-1">React</span>
-          <span class="rounded-4xl px-4 py-1">TypeScript</span>
-          <span class="rounded-4xl px-4 py-1">Tailwind</span>
-          <span class="rounded-4xl px-4 py-1">Vite</span>
+          <span class='rounded-4xl px-4 py-1'>HTML</span>
+          <span class='rounded-4xl px-4 py-1'>Javascript</span>
+          <span class='rounded-4xl px-4 py-1'>React</span>
+          <span class='rounded-4xl px-4 py-1'>TypeScript</span>
+          <span class='rounded-4xl px-4 py-1'>Tailwind</span>
+          <span class='rounded-4xl px-4 py-1'>Vite</span>
         </div>
       </ProjectCard>
       <ProjectCard
-        Title="BonsaiPractice"
-        Rol="Front-end"
-        Year="2023"
-        image="/projects/BonsaiPractice/BonsaiPracticeHome.jpg"
-        repoUrl="https://github.com/Jerimonski/Bonsai_Practice.git"
+        Title='BonsaiPractice'
+        Rol='Front-end'
+        Year='2023'
+        image='/projects/BonsaiPractice/BonsaiPracticeHome.jpg'
+        repoUrl='https://github.com/Jerimonski/Bonsai_Practice.git'
       >
         <p>
           Landing page de práctica enfocada en la replicación del contenido y
@@ -104,13 +101,13 @@ import ProjectCard from "./components/ProjectCard.astro"
           habilidades de maquetación y estilo.
         </p>
         <div
-          class="flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label"
+          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
         >
-          <span class="rounded-4xl px-4 py-1">HTML</span>
-          <span class="rounded-4xl px-4 py-1">Javascript</span>
-          <span class="rounded-4xl px-4 py-1">React</span>
-          <span class="rounded-4xl px-4 py-1">TailwindCSS</span>
-          <span class="rounded-4xl px-4 py-1">Vite</span>
+          <span class='rounded-4xl px-4 py-1'>HTML</span>
+          <span class='rounded-4xl px-4 py-1'>Javascript</span>
+          <span class='rounded-4xl px-4 py-1'>React</span>
+          <span class='rounded-4xl px-4 py-1'>TailwindCSS</span>
+          <span class='rounded-4xl px-4 py-1'>Vite</span>
         </div>
       </ProjectCard>
     </div>

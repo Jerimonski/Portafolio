@@ -5,67 +5,83 @@ import ButtonNext from "./components/ButtonNext.astro"
 import ButtonPrev from "./components/ButtonPrev.astro"
 import OverviewSection from "./components/OverviewSection.astro"
 import Features from "./components/Features.astro"
+import TechsBar from "./components/TechsBar.astro"
 ---
 
 <SecondLayout>
   <MainWebSection
-    year="2024"
-    title="BlackShark"
-    urlImage="/projects/BlackShark/BlackSharkHome.jpg"
-    description="Web orientada a un cliente real del rubro fotográfico, en la que mi aporte consistió en el desarrollo de nuevas interfaces gráficas y la refactorización del código para mejorar su rendimiento y organización."
-    urlRepo="https://github.com/IgnacioBarraza/BlackSharkWeb.git"
-    rol="Front-end"
-    client="Proyecto Colaborativo, inspirado en un cliente real"
+    year='2024'
+    title='BlackShark'
+    urlImage='/projects/BlackShark/BlackSharkHome.jpg'
+    description='Web orientada a un cliente real del rubro fotográfico, en la que mi aporte consistió en el desarrollo de nuevas interfaces gráficas y la refactorización del código para mejorar su rendimiento y organización.'
+    urlRepo='https://github.com/IgnacioBarraza/BlackSharkWeb.git'
+    rol='Front-end'
+    client='Proyecto Colaborativo, inspirado en un cliente real'
   >
-    <div
-      class="[&>span]:bg-black-ground [&>span]:border [&>span]:border-[#464646]"
-    >
-      <span class="rounded-4xl px-4 py-1">HTML</span>
-      <span class="rounded-4xl px-4 py-1">Javascript</span>
-      <span class="rounded-4xl px-4 py-1">React</span>
-      <span class="rounded-4xl px-4 py-1">TailwindCSS</span>
-      <span class="rounded-4xl px-4 py-1">Vite</span>
-      <span class="rounded-4xl px-4 py-1">Node.js</span>
-      <span class="rounded-4xl px-4 py-1">MySQL</span>
-    </div>
+    <TechsBar>
+      <span>HTML</span>
+      <span>Javascript</span>
+      <span>React</span>
+      <span>TailwindCSS</span>
+      <span>Vite</span>
+      <span>Node.js</span>
+      <span>MySQL</span>
+    </TechsBar>
     <OverviewSection>
-      Aporté en la refactorización y rediseño del sitio, trabajando en secciones clave como el formulario de 
-      contacto y el home, asegurando que todo fuera totalmente responsivo. Formé parte de un equipo guiado 
-      por un desarrollador con experiencia, donde aplicamos buenas prácticas de código limpio y escalable, 
-      logrando optimizar el rendimiento, la organización del código y mejorar la experiencia de usuario.
+      Aporté en la refactorización y rediseño del sitio, trabajando en secciones
+      clave como el formulario de contacto y el home, asegurando que todo fuera
+      totalmente responsivo. Formé parte de un equipo guiado por un
+      desarrollador con experiencia, donde aplicamos buenas prácticas de código
+      limpio y escalable, logrando optimizar el rendimiento, la organización del
+      código y mejorar la experiencia de usuario.
     </OverviewSection>
-    <div class="pb-16 space-y-12">
-      <h2 class="text-4xl">Imagenes</h2>
-      <div class="grid grid-cols-1 gap-8 [&>img]:w-full">
-          <img src="/projects/BlackShark/BlackSharkContact.jpg" alt="BlackSharkContact">
-          <img class="opacity-80" src="/projects/BlackShark/BlackSharkPresentation.jpg" alt="lackSharkPresentation">
-          <div class="grid grid-cols-2 gap-8 [&>img]:h-[500px]">
-            <img src="/projects/BlackShark/Colabs1.jpg" alt="BlackShark Colaboraciones">
-            <img src="/projects/BlackShark/Colabs2.jpg" alt="BlackShark Colaboraciones 2">
-          </div>
+    <div class='pb-16 space-y-12'>
+      <h2 class='text-4xl font-Primary'>Imagenes</h2>
+      <div class='grid grid-cols-1 gap-8 [&>img]:w-full'>
+        <img
+          src='/projects/BlackShark/BlackSharkContact.jpg'
+          alt='BlackSharkContact'
+        />
+        <img
+          class='opacity-80'
+          src='/projects/BlackShark/BlackSharkPresentation.jpg'
+          alt='lackSharkPresentation'
+        />
+        <div
+          class='lg:grid lg:grid-cols-2 gap-8 [&>img]:h-[500px] [&>img]:max-lg:w-full max-lg:space-y-4'
+        >
+          <img
+            src='/projects/BlackShark/Colabs1.jpg'
+            alt='BlackShark Colaboraciones'
+          />
+          <img
+            src='/projects/BlackShark/Colabs2.jpg'
+            alt='BlackShark Colaboraciones 2'
+          />
+        </div>
       </div>
     </div>
     <Features>
       <li>
-        <span>Rediseño del Home y secciones clave</span>: Mejora de la interfaz para una 
-        experiencia más moderna y funcional.
+        <span>Rediseño del Home y secciones clave</span>: Mejora de la interfaz
+        para una experiencia más moderna y funcional.
       </li>
       <li>
-        <span>Refactorización del formulario de contacto</span>: Código limpio, escalable 
-        y totalmente responsivo.
+        <span>Refactorización del formulario de contacto</span>: Código limpio,
+        escalable y totalmente responsivo.
       </li>
       <li>
-        <span>Trabajo en equipo con guía profesional</span>: Sistema de revisión de commits 
-        bajo buenas prácticas de desarrollo colaborativo.
+        <span>Trabajo en equipo con guía profesional</span>: Sistema de revisión
+        de commits bajo buenas prácticas de desarrollo colaborativo.
       </li>
       <li>
-        <span>Optimización de rendimiento y organización de código</span>: Garantizando mejor 
-        experiencia de usuario y mantenibilidad del proyecto.
+        <span>Optimización de rendimiento y organización de código</span>:
+        Garantizando mejor experiencia de usuario y mantenibilidad del proyecto.
       </li>
     </Features>
-    <div class="flex justify-between">
-      <ButtonPrev Text="BookMyFit" />
-      <ButtonNext Text="StrideVault" />
+    <div class='flex justify-between'>
+      <ButtonPrev Text='BookMyFit' />
+      <ButtonNext Text='StrideVault' />
     </div>
   </MainWebSection>
 </SecondLayout>
