@@ -1,0 +1,15 @@
+---
+const { Title, SubTitle, Description } = Astro.props
+---
+
+<article class='space-y-4 pb-16'>
+  <h3
+    class='text-light-green max-sm:lg text-2xl flex gap-2 items-center font-Primary'
+  >
+    {SubTitle}
+  </h3>
+  <h1 class='text-6xl max-sm:text-4xl font-Primary font-semibold'>{Title}</h1>
+  <p class='text-secondary-text text-xl'>
+    {Description}
+  </p>
+</article>
