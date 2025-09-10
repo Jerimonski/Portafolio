@@ -1,14 +1,15 @@
 ---
 import { IoIosArrowForward } from "react-icons/io"
-const { Text } = Astro.props;
+const { Text } = Astro.props
 ---
+
 <a
-    href=`/${Text}`
-    class="flex items-center hover:border-white duration-300 gap-6 cursor-pointer border border-[#464646] rounded-lg p-2"
+  href=`/${Text}`
+  class='flex items-center max-sm:gap-0 hover:border-white duration-300 gap-6 cursor-pointer border border-[#464646] rounded-lg p-2'
 >
-    <p class="flex flex-col text-left cursor-pointer py-1 px-4">
-    <span class="text-secondary-text">Next</span>
+  <p class='flex flex-col text-left cursor-pointer py-1 px-4'>
+    <span class='text-secondary-text'>Next</span>
     {Text}
-    </p>
-    <IoIosArrowForward />
+  </p>
+  <IoIosArrowForward />
 </a>
