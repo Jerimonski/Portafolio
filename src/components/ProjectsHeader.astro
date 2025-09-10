@@ -1,10 +1,11 @@
 ---
 import { TbUfo } from "react-icons/tb"
+import { HiMenu, HiX } from "react-icons/hi"
 ---
 
 <header class='w-full fixed z-50'>
   <nav
-    class='w-[1120px] mx-auto flex justify-between items-center flex-grow basis-0 py-4 backdrop-blur-sm'
+    class='w-[1120px] mx-auto max-lg:w-full flex max-md:hidden justify-between items-center py-4 backdrop-blur-lg max-lg:px-8'
   >
     <a class='p-2' href='/'>JA</a>
     <ul class='[&>a]:p-2 group relative'>
@@ -27,5 +28,57 @@ import { TbUfo } from "react-icons/tb"
     <span class='animation-ping duration-100 hover:rotate-30 p-2'>
       <TbUfo size={30} />
     </span>
+  </nav>
+  <button
+    id='menu-btn'
+    class='md:hidden z-50 absolute right-0 m-6 p-2 text-white focus:outline-none'
+    onclick="
+    document.getElementById('menu').classList.toggle('hidden');
+    document.getElementById('menu-btn-close').classList.toggle('hidden');
+    document.getElementById('menu-btn').classList.toggle('hidden');
+  "
+  >
+    <HiMenu size={28} />
+  </button>
+  <nav
+    id='menu'
+    class='hidden flex flex-col items-center bg-[#0b0b0d]/95 p-6 md:hidden
+          [&>a]:hover:text-yellow-green [&>a]:rounded-lg [&>a]:p-2 [&>a]:w-1/3 text-center'
+  >
+    <div class='flex justify-between w-full'>
+      <a class='p-2 font-bold text-lg' href='/'>JA</a>
+      <button
+        id='menu-btn-close'
+        class='hidden md:hidden pr-2 text-white focus:outline-none'
+        onclick="
+  document.getElementById('menu').classList.toggle('hidden');
+  document.getElementById('menu-btn-close').classList.toggle('hidden');
+  document.getElementById('menu-btn').classList.toggle('hidden');
+"
+      >
+        <HiX size={28} />
+      </button>
+    </div>
+    <a class='group-hover:opacity-40 hover:opacity-100 duration-300' href='/'
+      >Home</a
+    >
+    <a
+      class='group-hover:opacity-40 hover:opacity-100 duration-300'
+      href='#descripción'>descripción</a
+    >
+    <a
+      class='group-hover:opacity-40 hover:opacity-100 duration-300'
+      href='#Caracteristicas'>Caracteristicas</a
+    >
+    <a
+      class='group-hover:opacity-40 hover:opacity-100 duration-300'
+      href='/Contactame'>Contáctame</a
+    >
+    <a
+      href='Sanctuary'
+      class='opacity-0 cursor-default absolute bottom-0 right-0 text-xs bg-amber-400'
+    >
+      Hanni Secret Sanctuary
+    </a>
   </nav>
 </header>
