@@ -1,21 +1,39 @@
 ---
-const { Title, Rol, Year, image, repoUrl } = Astro.props;
+const { Title, Rol, Year, image, repoUrl } = Astro.props
 ---
-<div class="group-hover:opacity-40 hover:opacity-100 duration-300 hover:scale-110 py-6 space-y-2">
-    <figure class=`rounded-3xl`>
-        <a href=`/${Title}`>
-            <img class="hover:scale-110 duration-300" src={image} alt="Imagen BookMyFit">
-        </a>
-    </figure>
-    <article class="space-y-2 py-4">
-        <h3 class="text-lg">{Title}</h3>
-        <p class="flex justify-between text-sm text-secondary-text">{Rol}<span>{Year}</span></p> 
-    </article>
-    <slot />
-    <div class="flex text-center [&>a]:py-2 [&>a]:rounded-xl">
-        <a href={repoUrl} target="_blank"
-        class="font-extrabold text-lg bg-darker-green w-full cursor-pointer group-hover:opacity-40 hover:opacity-100 duration-300">
-            Ver Repositorio
-        </a>
-    </div>
+
+<div
+  class='group-hover:opacity-40 hover:opacity-100 duration-300 lg:hover:scale-110 py-6 space-y-2'
+>
+  <figure class=`rounded-3xl`>
+    <a href=`/${Title}`>
+      <img
+        class='lg:hover:scale-110 duration-300'
+        src={image}
+        alt='Imagen BookMyFit'
+      />
+    </a>
+  </figure>
+  <article class='space-y-2 py-4'>
+    <h3 class='text-lg'>{Title}</h3>
+    <p class='flex justify-between text-sm text-secondary-text'>
+      {Rol}<span>{Year}</span>
+    </p>
+  </article>
+  <slot />
+  <div class='flex text-center gap-8 [&>a]:py-2 [&>a]:rounded-xl'>
+    <a
+      href={repoUrl}
+      target='_blank'
+      class='font-extrabold text-lg bg-darker-green w-full cursor-pointer group-hover:opacity-40 hover:opacity-100 duration-300'
+    >
+      Ver Repositorio
+    </a>
+    <a
+      href=`/${Title}`
+      class='font-extrabold border border-secondary-text text-lg bg-black w-full cursor-pointer group-hover:opacity-40 hover:opacity-100 duration-300'
+    >
+      Mas detalles
+    </a>
+  </div>
 </div>
