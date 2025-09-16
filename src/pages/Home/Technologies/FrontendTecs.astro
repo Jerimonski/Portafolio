@@ -1,29 +1,16 @@
 ---
 import TecsContent from "./components/TecsContent.astro"
+import { Icons } from "./TechsIcons/FrontendIcons"
+const icons = Icons.Frontend
 ---
+
 <TecsContent>
-    <figure>
-        <img src="/technologies/Frontend/HTML5.png" alt="HTML5 Icon">
-        <figcaption>HTML5</figcaption>
-    </figure>
-    <figure>
-        <img src="/technologies/Frontend/CSS3.png" alt="CSS3 Icon">
-        <figcaption>CSS3</figcaption>
-    </figure>
-    <figure>
-        <img src="/technologies/Frontend/JavaScript.png" alt="JavaScript Icon">
-        <figcaption>JavaScript</figcaption>
-    </figure>
-    <figure>
-        <img src="/technologies/Frontend/React.png" alt="React Icon">
-        <figcaption>React</figcaption>
-    </figure>
-    <figure>
-        <img src="/technologies/Frontend/TailwindCSS.png" alt="TailwindCSS Icon">
-        <figcaption>TailwindCSS</figcaption>
-    </figure>
-    <figure>
-        <img src="/technologies/Frontend/Vite.png" alt="Vite Icon">
-        <figcaption>Vite</figcaption>
-    </figure>
+  {
+    icons.map((icon) => (
+      <div>
+        <icon.icon />
+        <span>{icon.name}</span>
+      </div>
+    ))
+  }
 </TecsContent>
