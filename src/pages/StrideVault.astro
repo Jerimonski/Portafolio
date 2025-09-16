@@ -5,6 +5,7 @@ import ButtonNext from "./components/ButtonNext.astro"
 import ButtonPrev from "./components/ButtonPrev.astro"
 import OverviewSection from "./components/OverviewSection.astro"
 import Features from "./components/Features.astro"
+import TechsBar from "./components/TechsBar.astro"
 ---
 
 <SecondLayout>
@@ -17,15 +18,13 @@ import Features from "./components/Features.astro"
     rol='Front-end'
     client='Proyecto personal'
   >
-    <div
-      class='[&>span]:bg-black-ground [&>span]:border [&>span]:border-[#464646]'
-    >
+    <TechsBar>
       <span>HTML</span>
       <span>Javascript</span>
       <span>React</span>
       <span>TailwindCSS</span>
       <span>Vite</span>
-    </div>
+    </TechsBar>
     <OverviewSection>
       Landing page interactiva para la presentación de zapatillas urbanas, que
       permite a los usuarios explorar distintos modelos, aplicar filtros de

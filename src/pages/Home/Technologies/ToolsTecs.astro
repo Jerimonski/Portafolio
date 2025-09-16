@@ -1,25 +1,32 @@
 ---
 import TecsContent from "./components/TecsContent.astro"
+import { Icons } from "./TechsIcons/ToolsIcons"
+const icons = Icons.Tools
 ---
+
 <TecsContent>
-    <figure>
-        <img src="/technologies/Tools/GitHub.png" alt="GitHub Icon">
-        <figcaption>GitHub</figcaption>
-    </figure>
-    <figure>
-        <img src="/technologies/Tools/Git.png" alt="Git Icon">
-        <figcaption>Git</figcaption>
-    </figure>
-    <figure>
-        <img src="/technologies/Tools/VisualStudioCode.png" alt="VisualStudioCode Icon">
-        <figcaption>Visual Studio Code</figcaption>
-    </figure>
-    <figure>
-        <img src="/technologies/Tools/NPM.png" alt="NPM Icon">
-        <figcaption>NPM</figcaption>
-    </figure>
-    <figure>
-        <img src="/technologies/Tools/Jira.png" alt="Jira Icon">
-        <figcaption>Jira</figcaption>
-    </figure>
+  {
+    icons.map((icon) => (
+      <div>
+        <icon.icon />
+        <span>{icon.name}</span>
+      </div>
+    ))
+  }
+  <figure class='items-center flex flex-col space-y-4 text-lg'>
+    <img
+      src='/technologies/Tools/GitHub.png'
+      alt='GitHub Icon'
+      class='size-24'
+    />
+    <figcaption>GitHub</figcaption>
+  </figure>
+  <figure class='items-center flex flex-col space-y-4 text-lg'>
+    <img
+      src='/technologies/Tools/VisualStudioCode.png'
+      alt='Visual Studio Code Icon'
+      class='size-24'
+    />
+    <figcaption>Visual Studio Code</figcaption>
+  </figure>
 </TecsContent>

@@ -1,22 +1,24 @@
 ---
 import TecsContent from "./components/TecsContent.astro"
+import { Icons } from "./TechsIcons/LearningIcons"
+const icons = Icons.Learning
 ---
 
 <TecsContent>
-  <figure>
-    <img src='/technologies/Learning/Astro.png' alt='Astro Icon' />
+  {
+    icons.map((icon) => (
+      <div>
+        <icon.icon />
+        <span>{icon.name}</span>
+      </div>
+    ))
+  }
+  <figure class='items-center flex flex-col space-y-4 text-lg'>
+    <img
+      src='/technologies/Learning/Astro.png'
+      alt='Astro Icon'
+      class='size-24'
+    />
     <figcaption>Astro</figcaption>
-  </figure>
-  <figure>
-    <img src='/technologies/Learning/MongoDB.png' alt='MongoDB Icon' />
-    <figcaption>MongoDB</figcaption>
-  </figure>
-  <figure>
-    <img src='/technologies/Learning/TypeScript.png' alt='TypeScript Icon' />
-    <figcaption>TypeScript</figcaption>
-  </figure>
-  <figure>
-    <img src='/technologies/Learning/Figma.png' alt='Figma Icon' />
-    <figcaption>Figma</figcaption>
   </figure>
 </TecsContent>
