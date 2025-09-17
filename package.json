@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "npx astro dev --remote",
-    "build": "astro build",
+    "build": "astro build --remote",
     "preview": "astro preview",
     "astro": "astro"
   },
