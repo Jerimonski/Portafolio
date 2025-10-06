@@ -37,15 +37,14 @@ const ContactForm = ({
         body: JSON.stringify(data),
       })
 
-      const res = await response.json()
-
-      if (!res.ok) {
-        console.log("Something went wrong: ", res)
+      if (!response.ok) {
+        console.log("Something went wrong: ", response)
         toast.dismiss(loading)
-        toast.error(res.message)
+        toast.error("Error al enviar el mensaje")
       } else {
+        const res = await response.json()
         toast.dismiss(loading)
-        toast.success("¡Mensaje enviado!")
+        toast.success(res.message || "¡Mensaje enviado!")
       }
 
       setIsLoading(false)
