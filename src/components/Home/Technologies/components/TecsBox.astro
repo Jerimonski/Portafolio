@@ -1,8 +1,8 @@
 ---
-const { Title } = Astro.props
+const { Title, Height } = Astro.props
 ---
 
-<div class='min-h-[500px] bg-black-ground rounded-xl max-sm:px-8'>
+<div class=`${Height} bg-black-ground rounded-xl max-sm:px-8`>
   <h2 class='text-center text-4xl font-semibold font-Primary py-12'>
     {Title}
   </h2>
