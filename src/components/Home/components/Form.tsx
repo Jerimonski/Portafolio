@@ -44,7 +44,7 @@ const ContactForm = ({
       } else {
         const res = await response.json()
         toast.dismiss(loading)
-        toast.success(res.message || "¡Mensaje enviado!")
+        toast.success("¡Mensaje enviado!")
       }
 
       setIsLoading(false)
