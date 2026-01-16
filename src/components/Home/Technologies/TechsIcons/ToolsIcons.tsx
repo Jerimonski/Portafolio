@@ -60,7 +60,7 @@ export const JiraIcon = () => (
 export const Icons = {
   Tools: [
     { name: "Git", icon: GitIcon },
-    { name: "Figma", icon: NPMIcon },
+    { name: "npm", icon: NPMIcon },
     { name: "Jira", icon: JiraIcon },
   ],
 }
