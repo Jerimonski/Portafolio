@@ -9,11 +9,68 @@ import ProjectCard from "./components/ProjectCard.astro"
     SubTitle='Mi Trabajo'
     Description='Aquí una selección que muestra mi experiencia y los resultados obtenidos.'
   />
-  <div class='flex justify-center flex-cols-2 max-lg:flex-col gap-24 group'>
-    <div class='flex-grow space-y-12 w-1/2 max-lg:w-full max-lg:space-y-24'>
+
+  <div class='grid grid-cols-2 max-lg:grid-cols-1 gap-24 group'>
+    <!-- Columna 1 -->
+    <div class='space-y-12 max-lg:space-y-24'>
+      <ProjectCard
+        Title='Vety App'
+        Rol='Full Stack'
+        Year='2026'
+        image='/projects/VetyApp/VetyApp.jpg'
+        repoUrl=''
+      >
+        <p class='text-pretty'>
+          Digitalicé la gestión de información veterinaria mediante un sistema
+          que conecta a clínicas y tutores. Las clínicas pueden registrar y
+          administrar la información de sus pacientes, mientras los tutores
+          pueden consultar desde una aplicación el estado y antecedentes de sus
+          mascotas.
+        </p>
+
+        <div
+          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
+        >
+          <span class='rounded-4xl px-4 py-1'>Flutter</span>
+          <span class='rounded-4xl px-4 py-1'>Dart</span>
+          <span class='rounded-4xl px-4 py-1'>NestJS</span>
+          <span class='rounded-4xl px-4 py-1'>Prisma</span>
+          <span class='rounded-4xl px-4 py-1'>PostgreSQL</span>
+          <span class='rounded-4xl px-4 py-1'>JWT</span>
+          <span class='rounded-4xl px-4 py-1'>Android Studio</span>
+        </div>
+      </ProjectCard>
+      <ProjectCard
+        Title='Muck-Mon'
+        Rol='Full Stack'
+        Year='2025'
+        image='/projects/IoT/IoT.jpg'
+        repoUrl=''
+      >
+        <p class='text-pretty'>
+          Sistema de control remoto para un robot de limpieza, conectando una
+          aplicación web con el Arduino del robot mediante AWS y un broker de
+          comunicación. Las instrucciones son validadas y registradas antes de
+          llegar al robot, creando un flujo seguro entre el usuario, los
+          servicios en la nube y el dispositivo.
+        </p>
+
+        <div
+          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
+        >
+          <span class='rounded-4xl px-4 py-1'>React</span>
+          <span class='rounded-4xl px-4 py-1'>Node.js</span>
+          <span class='rounded-4xl px-4 py-1'>EMQX</span>
+          <span class='rounded-4xl px-4 py-1'>MQTT</span>
+          <span class='rounded-4xl px-4 py-1'>AWS</span>
+          <span class='rounded-4xl px-4 py-1'>Docker</span>
+          <span class='rounded-4xl px-4 py-1'>PostgreSQL</span>
+          <span class='rounded-4xl px-4 py-1'>JWT</span>
+        </div>
+      </ProjectCard>
       <ProjectCard
         Title='BookMyFit'
-        Rol='FullStack'
+        Rol='Full Stack'
         Year='2025'
         image='/projects/BookMyFit/BookMyFit.jpg'
         repoUrl='https://github.com/Jerimonski/BookMyFit_Front-end.git'
@@ -24,10 +81,11 @@ import ProjectCard from "./components/ProjectCard.astro"
           elegir una disciplina deportiva entre una variedad disponible y
           agendar horarios según la disponibilidad del lugar.
         </p>
+
         <div
           class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
         >
-          <span class='rounded-4xl px-4 py-1'>Javascript</span>
+          <span class='rounded-4xl px-4 py-1'>JavaScript</span>
           <span class='rounded-4xl px-4 py-1'>React</span>
           <span class='rounded-4xl px-4 py-1'>TailwindCSS</span>
           <span class='rounded-4xl px-4 py-1'>Node.js</span>
@@ -46,26 +104,76 @@ import ProjectCard from "./components/ProjectCard.astro"
         image='/projects/StrideVault/StrideVaultHome.jpg'
         repoUrl='https://github.com/Jerimonski/StrideVault.git'
       >
-        <p>
+        <p class='text-pretty'>
           Landing page interactiva enfocada en la presentación de zapatillas
           urbanas como Nike, Jordan y otras marcas. El usuario puede explorar
           distintos modelos, navegar entre páginas y acceder a una vista
           detallada de cada producto.
         </p>
+
         <div
           class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
         >
           <span class='rounded-4xl px-4 py-1'>HTML</span>
-          <span class='rounded-4xl px-4 py-1'>Javascript</span>
+          <span class='rounded-4xl px-4 py-1'>JavaScript</span>
           <span class='rounded-4xl px-4 py-1'>React</span>
           <span class='rounded-4xl px-4 py-1'>Tailwind</span>
           <span class='rounded-4xl px-4 py-1'>Vite</span>
         </div>
       </ProjectCard>
     </div>
-    <div
-      class='flex-grow mt-10 [&>div]:rounded-3xl space-y-12 w-1/2 max-lg:w-full max-lg:space-y-24'
-    >
+    <!-- Columna 2 -->
+    <div class='space-y-12 mt-10 max-lg:mt-0 max-lg:space-y-24'>
+      <ProjectCard
+        Title='Sistema de Automatización de facturas'
+        Rol='Python'
+        Year='2026'
+        image='/projects/Importaciones/Importaciones.jpg'
+        repoUrl=''
+      >
+        <p class='text-pretty'>
+          Sistema de automatización desarrollado en Python para extraer
+          información desde facturas en PDF, procesarla e integrarla con Google
+          Sheets, generando datos estructurados para su posterior análisis en
+          Power BI.
+        </p>
+
+        <div
+          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
+        >
+          <span class='rounded-4xl px-4 py-1'>Python</span>
+          <span class='rounded-4xl px-4 py-1'>FastAPI</span>
+          <span class='rounded-4xl px-4 py-1'>Google Gemini API</span>
+          <span class='rounded-4xl px-4 py-1'>Google Sheets API</span>
+          <span class='rounded-4xl px-4 py-1'>PowerBi</span>
+        </div>
+      </ProjectCard>
+      <ProjectCard
+        Title='Sistema de Monitoreo Municipal'
+        Rol='Práctica Profesional · Full Stack'
+        Year='2025'
+        image='/projects/Monitoreo/Monitoreo.jpg'
+        repoUrl=''
+      >
+        <p class='text-pretty'>
+          Desarrollé una plataforma para monitorear los dispositivos de red de
+          la Municipalidad de Alto Hospicio, identificando automáticamente
+          equipos activos, caídos e inactivos para facilitar una atención
+          preventiva.
+        </p>
+
+        <div
+          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
+        >
+          <span class='rounded-4xl px-4 py-1'>React</span>
+          <span class='rounded-4xl px-4 py-1'>JavaScript</span>
+          <span class='rounded-4xl px-4 py-1'>HTML5</span>
+          <span class='rounded-4xl px-4 py-1'>CSS3</span>
+          <span class='rounded-4xl px-4 py-1'>Tailwind CSS</span>
+          <span class='rounded-4xl px-4 py-1'>Python</span>
+          <span class='rounded-4xl px-4 py-1'>SQL Server</span>
+        </div>
+      </ProjectCard>
       <ProjectCard
         Title='BlackShark'
         Rol='Front-end'
@@ -73,41 +181,20 @@ import ProjectCard from "./components/ProjectCard.astro"
         image='/projects/BlackShark/BlackSharkHome.jpg'
         repoUrl='https://github.com/IgnacioBarraza/BlackSharkWeb.git'
       >
-        <p>
+        <p class='text-pretty'>
           Web orientada a un cliente real del rubro fotográfico, en la que mi
           aporte consistió en el desarrollo de nuevas interfaces gráficas y la
           refactorización del código para mejorar su rendimiento y organización.
         </p>
+
         <div
           class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
         >
           <span class='rounded-4xl px-4 py-1'>HTML</span>
-          <span class='rounded-4xl px-4 py-1'>Javascript</span>
+          <span class='rounded-4xl px-4 py-1'>JavaScript</span>
           <span class='rounded-4xl px-4 py-1'>React</span>
           <span class='rounded-4xl px-4 py-1'>TypeScript</span>
           <span class='rounded-4xl px-4 py-1'>Tailwind</span>
-          <span class='rounded-4xl px-4 py-1'>Vite</span>
-        </div>
-      </ProjectCard>
-      <ProjectCard
-        Title='BonsaiPractice'
-        Rol='Front-end'
-        Year='2023'
-        image='/projects/BonsaiPractice/BonsaiPracticeHome.jpg'
-        repoUrl='https://github.com/Jerimonski/Bonsai_Practice.git'
-      >
-        <p>
-          Landing page de práctica enfocada en la replicación del contenido y
-          diseño de una página existente, con el objetivo de perfeccionar
-          habilidades de maquetación y estilo.
-        </p>
-        <div
-          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
-        >
-          <span class='rounded-4xl px-4 py-1'>HTML</span>
-          <span class='rounded-4xl px-4 py-1'>Javascript</span>
-          <span class='rounded-4xl px-4 py-1'>React</span>
-          <span class='rounded-4xl px-4 py-1'>TailwindCSS</span>
           <span class='rounded-4xl px-4 py-1'>Vite</span>
         </div>
       </ProjectCard>

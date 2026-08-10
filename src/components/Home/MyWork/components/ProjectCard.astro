@@ -3,37 +3,43 @@ const { Title, Rol, Year, image, repoUrl } = Astro.props
 ---
 
 <div
-  class='group-hover:opacity-40 hover:opacity-100 duration-300 lg:hover:scale-110 py-6 space-y-2'
+  class='py-6 space-y-2 transition-all duration-300 group-hover:opacity-40 hover:opacity-100'
 >
-  <figure class=`rounded-3xl`>
-    <a href=`/${Title}`>
+  <figure class='overflow-hidden rounded-xl'>
+    <a href={`/${Title}`} class='block'>
       <img
-        class='lg:hover:scale-110 duration-300'
         src={image}
-        alt='Imagen BookMyFit'
+        alt={`Imagen ${Title}`}
+        class='w-full h-64 object-fit transition-transform duration-300 ease-out hover:scale-110'
       />
     </a>
   </figure>
+
   <article class='space-y-2 py-4'>
     <h3 class='text-lg'>{Title}</h3>
+
     <p class='flex justify-between text-sm text-secondary-text'>
-      {Rol}<span>{Year}</span>
+      {Rol}
+      <span>{Year}</span>
     </p>
   </article>
+
   <slot />
-  <div class='flex text-center gap-8 [&>a]:py-2 [&>a]:rounded-xl'>
+
+  <div class='flex gap-8 text-center [&>a]:py-2 [&>a]:rounded-xl'>
     <a
       href={repoUrl}
       target='_blank'
-      class='font-extrabold text-lg bg-darker-green w-full cursor-pointer group-hover:opacity-40 hover:opacity-100 duration-300'
+      class='w-full bg-darker-green text-lg font-extrabold transition-opacity duration-300 group-hover:opacity-40 hover:opacity-100'
     >
       Ver Repositorio
     </a>
+
     <a
-      href=`/${Title}`
-      class='font-extrabold border border-secondary-text text-lg bg-black w-full cursor-pointer group-hover:opacity-40 hover:opacity-100 duration-300'
+      href={`/${Title}`}
+      class='w-full border border-secondary-text bg-black text-lg font-extrabold transition-opacity duration-300 group-hover:opacity-40 hover:opacity-100'
     >
-      Mas detalles
+      Más detalles
     </a>
   </div>
 </div>
