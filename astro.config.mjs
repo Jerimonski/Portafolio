@@ -12,4 +12,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   integrations: [react(), db()],
+  site: "https://www.jeremydev.cl",
 })
