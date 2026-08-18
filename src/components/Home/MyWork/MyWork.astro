@@ -5,27 +5,26 @@ import ProjectCard from "./components/ProjectCard.astro"
 
 <section class='w-[1120px] max-lg:w-full max-lg:px-8 py-36' id='Proyectos'>
   <SectionTitle
-    Title='Algunos de mis proyectos'
+    Title='Proyectos'
     SubTitle='Mi Trabajo'
     Description='Aquí una selección que muestra mi experiencia y los resultados obtenidos.'
   />
 
   <div class='grid grid-cols-2 max-lg:grid-cols-1 gap-24 group'>
-    <!-- Columna 1 -->
     <div class='space-y-12 max-lg:space-y-24'>
       <ProjectCard
-        Title='Vety App'
+        Title='Vety'
         Rol='Full Stack'
         Year='2026'
         image='/projects/VetyApp/VetyApp.jpg'
-        repoUrl=''
+        repoUrl='https://github.com/Jerimonski/Vety_APP.git'
       >
         <p class='text-pretty'>
-          Digitalicé la gestión de información veterinaria mediante un sistema
-          que conecta a clínicas y tutores. Las clínicas pueden registrar y
-          administrar la información de sus pacientes, mientras los tutores
-          pueden consultar desde una aplicación el estado y antecedentes de sus
-          mascotas.
+          Sistema de gestión clínica veterinaria con una plataforma para
+          clínicas y una aplicación móvil para tutores. Permite a las clínicas
+          administrar la información de clientes, mascotas y fichas clínicas,
+          mientras los tutores pueden consultar el historial y estado de salud
+          de sus mascotas.
         </p>
 
         <div
@@ -44,15 +43,14 @@ import ProjectCard from "./components/ProjectCard.astro"
         Title='Muck-Mon'
         Rol='Full Stack'
         Year='2025'
-        image='/projects/IoT/IoT.jpg'
-        repoUrl=''
+        image='/projects/Muck-Mon/Muck-Mon.jpg'
+        repoUrl='https://github.com/Jerimonski'
       >
         <p class='text-pretty'>
-          Sistema de control remoto para un robot de limpieza, conectando una
-          aplicación web con el Arduino del robot mediante AWS y un broker de
-          comunicación. Las instrucciones son validadas y registradas antes de
-          llegar al robot, creando un flujo seguro entre el usuario, los
-          servicios en la nube y el dispositivo.
+          Sistema remoto de un robot de limpieza, conectando una aplicación web
+          con un Arduino mediante AWS y un broker de comunicación. Las
+          instrucciones son validadas antes de llegar al robot, creando un flujo
+          seguro entre el usuario, los servicios en la nube y el dispositivo.
         </p>
 
         <div
@@ -66,6 +64,84 @@ import ProjectCard from "./components/ProjectCard.astro"
           <span class='rounded-4xl px-4 py-1'>Docker</span>
           <span class='rounded-4xl px-4 py-1'>PostgreSQL</span>
           <span class='rounded-4xl px-4 py-1'>JWT</span>
+        </div>
+      </ProjectCard>
+
+      <ProjectCard
+        Title='BlackShark'
+        Rol='Front-end'
+        Year='2024'
+        image='/projects/BlackShark/BlackSharkHome.jpg'
+        repoUrl='https://github.com/IgnacioBarraza/BlackSharkWeb.git'
+      >
+        <p class='text-pretty'>
+          Web orientada a un cliente real del rubro fotográfico, en la que mi
+          aporte consistió en el desarrollo de nuevas interfaces gráficas y la
+          refactorización del código para mejorar su rendimiento y organización.
+        </p>
+
+        <div
+          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
+        >
+          <span class='rounded-4xl px-4 py-1'>HTML</span>
+          <span class='rounded-4xl px-4 py-1'>JavaScript</span>
+          <span class='rounded-4xl px-4 py-1'>React</span>
+          <span class='rounded-4xl px-4 py-1'>TypeScript</span>
+          <span class='rounded-4xl px-4 py-1'>Tailwind</span>
+          <span class='rounded-4xl px-4 py-1'>Vite</span>
+        </div>
+      </ProjectCard>
+    </div>
+    <!-- Columna 2 -->
+    <div class='space-y-12 max-lg:mt-0 max-lg:space-y-24'>
+      <!-- <ProjectCard
+        Title='Sistema de Automatización de facturas'
+        Rol='Python'
+        Year='2026'
+        image='/projects/Importaciones/Importaciones.jpg'
+        repoUrl=''
+      >
+        <p class='text-pretty'>
+          Sistema de automatización desarrollado en Python para extraer
+          información desde facturas en PDF, procesarla e integrarla con Google
+          Sheets, generando datos estructurados para su posterior análisis en
+          Power BI.
+        </p>
+
+        <div
+          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
+        >
+          <span class='rounded-4xl px-4 py-1'>Python</span>
+          <span class='rounded-4xl px-4 py-1'>FastAPI</span>
+          <span class='rounded-4xl px-4 py-1'>Google Gemini API</span>
+          <span class='rounded-4xl px-4 py-1'>Google Sheets API</span>
+          <span class='rounded-4xl px-4 py-1'>PowerBi</span>
+        </div>
+      </ProjectCard> -->
+      <ProjectCard
+        Title='PulseAlert'
+        Rol='Práctica Profesional · Full Stack'
+        Year='2025'
+        image='/projects/PulseAlertMAHO/monitor.jpg'
+        repoUrl='https://github.com/Jerimonski/PulseAlert-Backend.git'
+      >
+        <p class='text-pretty'>
+          Desarrollé una plataforma para monitorear los dispositivos de red de
+          la Municipalidad de Alto Hospicio, identificando automáticamente
+          equipos activos, caídos e inactivos para facilitar la atención
+          preventiva del departamento de soporte técnico.
+        </p>
+
+        <div
+          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
+        >
+          <span class='rounded-4xl px-4 py-1'>React</span>
+          <span class='rounded-4xl px-4 py-1'>JavaScript</span>
+          <span class='rounded-4xl px-4 py-1'>HTML5</span>
+          <span class='rounded-4xl px-4 py-1'>CSS3</span>
+          <span class='rounded-4xl px-4 py-1'>Tailwind CSS</span>
+          <span class='rounded-4xl px-4 py-1'>Python</span>
+          <span class='rounded-4xl px-4 py-1'>SQL Server</span>
         </div>
       </ProjectCard>
       <ProjectCard
@@ -105,10 +181,9 @@ import ProjectCard from "./components/ProjectCard.astro"
         repoUrl='https://github.com/Jerimonski/StrideVault.git'
       >
         <p class='text-pretty'>
-          Landing page interactiva enfocada en la presentación de zapatillas
-          urbanas como Nike, Jordan y otras marcas. El usuario puede explorar
-          distintos modelos, navegar entre páginas y acceder a una vista
-          detallada de cada producto.
+          Pagina interactiva enfocada en la presentación de zapatillas urbanas
+          como Nike y otras marcas. El usuario puede explorar distintos modelos,
+          navegar y acceder a una vista detallada de cada producto.
         </p>
 
         <div
@@ -117,85 +192,9 @@ import ProjectCard from "./components/ProjectCard.astro"
           <span class='rounded-4xl px-4 py-1'>HTML</span>
           <span class='rounded-4xl px-4 py-1'>JavaScript</span>
           <span class='rounded-4xl px-4 py-1'>React</span>
-          <span class='rounded-4xl px-4 py-1'>Tailwind</span>
+          <span class='rounded-4xl px-4 py-1'>TailwindCSS</span>
           <span class='rounded-4xl px-4 py-1'>Vite</span>
-        </div>
-      </ProjectCard>
-    </div>
-    <!-- Columna 2 -->
-    <div class='space-y-12 mt-10 max-lg:mt-0 max-lg:space-y-24'>
-      <ProjectCard
-        Title='Sistema de Automatización de facturas'
-        Rol='Python'
-        Year='2026'
-        image='/projects/Importaciones/Importaciones.jpg'
-        repoUrl=''
-      >
-        <p class='text-pretty'>
-          Sistema de automatización desarrollado en Python para extraer
-          información desde facturas en PDF, procesarla e integrarla con Google
-          Sheets, generando datos estructurados para su posterior análisis en
-          Power BI.
-        </p>
-
-        <div
-          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
-        >
-          <span class='rounded-4xl px-4 py-1'>Python</span>
-          <span class='rounded-4xl px-4 py-1'>FastAPI</span>
-          <span class='rounded-4xl px-4 py-1'>Google Gemini API</span>
-          <span class='rounded-4xl px-4 py-1'>Google Sheets API</span>
-          <span class='rounded-4xl px-4 py-1'>PowerBi</span>
-        </div>
-      </ProjectCard>
-      <ProjectCard
-        Title='Sistema de Monitoreo Municipal'
-        Rol='Práctica Profesional · Full Stack'
-        Year='2025'
-        image='/projects/Monitoreo/Monitoreo.jpg'
-        repoUrl=''
-      >
-        <p class='text-pretty'>
-          Desarrollé una plataforma para monitorear los dispositivos de red de
-          la Municipalidad de Alto Hospicio, identificando automáticamente
-          equipos activos, caídos e inactivos para facilitar una atención
-          preventiva.
-        </p>
-
-        <div
-          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
-        >
-          <span class='rounded-4xl px-4 py-1'>React</span>
-          <span class='rounded-4xl px-4 py-1'>JavaScript</span>
-          <span class='rounded-4xl px-4 py-1'>HTML5</span>
-          <span class='rounded-4xl px-4 py-1'>CSS3</span>
-          <span class='rounded-4xl px-4 py-1'>Tailwind CSS</span>
-          <span class='rounded-4xl px-4 py-1'>Python</span>
-          <span class='rounded-4xl px-4 py-1'>SQL Server</span>
-        </div>
-      </ProjectCard>
-      <ProjectCard
-        Title='BlackShark'
-        Rol='Front-end'
-        Year='2024'
-        image='/projects/BlackShark/BlackSharkHome.jpg'
-        repoUrl='https://github.com/IgnacioBarraza/BlackSharkWeb.git'
-      >
-        <p class='text-pretty'>
-          Web orientada a un cliente real del rubro fotográfico, en la que mi
-          aporte consistió en el desarrollo de nuevas interfaces gráficas y la
-          refactorización del código para mejorar su rendimiento y organización.
-        </p>
-
-        <div
-          class='flex w-full flex-wrap gap-2 justify-center py-6 [&>span]:bg-gray-label'
-        >
-          <span class='rounded-4xl px-4 py-1'>HTML</span>
-          <span class='rounded-4xl px-4 py-1'>JavaScript</span>
-          <span class='rounded-4xl px-4 py-1'>React</span>
-          <span class='rounded-4xl px-4 py-1'>TypeScript</span>
-          <span class='rounded-4xl px-4 py-1'>Tailwind</span>
-          <span class='rounded-4xl px-4 py-1'>Vite</span>
+          <span class='rounded-4xl px-4 py-1'>API REST</span>
         </div>
       </ProjectCard>
     </div>

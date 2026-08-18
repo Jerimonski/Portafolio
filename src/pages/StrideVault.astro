@@ -5,7 +5,6 @@ import MainWebSection from "../components/Home/components/MainWebSection.astro"
 import OverviewSection from "../components/Home/components/OverviewSection.astro"
 import TechsBar from "../components/Home/components/TechsBar.astro"
 import ButtonPrev from "../components/Home/components/ButtonPrev.astro"
-import ButtonNext from "../components/Home/components/ButtonNext.astro"
 ---
 
 <SecondLayout>
@@ -69,9 +68,8 @@ import ButtonNext from "../components/Home/components/ButtonNext.astro"
         seleccionados y visualizar el total de la compra de manera inmediata.
       </li>
     </Features>
-    <div class='flex justify-between'>
+    <div class='absolute left-0 max-lg:pl-8'>
       <ButtonPrev Text='BlackShark' />
-      <ButtonNext Text='BonsaiPractice' />
     </div>
   </MainWebSection>
 </SecondLayout>

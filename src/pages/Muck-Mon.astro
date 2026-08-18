@@ -1,0 +1,82 @@
+---
+import SecondLayout from "../layouts/SecondLayout.astro"
+import Features from "../components/Home/components/Features.astro"
+import MainWebSection from "../components/Home/components/MainWebSection.astro"
+import OverviewSection from "../components/Home/components/OverviewSection.astro"
+import TechsBar from "../components/Home/components/TechsBar.astro"
+import ButtonPrev from "../components/Home/components/ButtonPrev.astro"
+import ButtonNext from "../components/Home/components/ButtonNext.astro"
+---
+
+<SecondLayout>
+  <MainWebSection
+    year='2025'
+    title='Muck-Mon'
+    urlImage='/projects/Muck-Mon/Muck-Mon.jpg'
+    description='Sistema de control remoto para un robot de limpieza, diseñado para conectar una interfaz web con un dispositivo físico mediante AWS y MQTT. La solución permite enviar instrucciones al robot de forma controlada, validando cada acción y registrando las operaciones realizadas.'
+    urlRepo=''
+    rol='Full Stack'
+    client='Proyecto universitario'
+  >
+    <TechsBar>
+      <span>React</span>
+      <span>Node.js</span>
+      <span>AWS</span>
+      <span>AWS Lambda</span>
+      <span>EMQX</span>
+      <span>MQTT</span>
+      <span>Arduino</span>
+      <span>DynamoDB</span>
+      <span>WebSockets</span>
+      <span>Docker</span>
+    </TechsBar>
+
+    <OverviewSection>
+      Muck-Mon transforma la operación de maquinaria urbana en un proceso
+      teleoperado, permitiendo controlar un robot de forma remota desde una
+      aplicación web. La solución integra la interfaz del operador con una capa
+      de procesamiento en la nube que valida y registra cada instrucción antes
+      de ejecutarla, manteniendo la trazabilidad de las acciones realizadas.
+      Finalmente, un sistema de comunicación basado en MQTT conecta la nube con
+      el robot, permitiendo enviar comandos y recibir datos del dispositivo de
+      forma coordinada. De esta manera, el proyecto integra interacción humana,
+      procesamiento en la nube y ejecución física dentro de un mismo sistema.
+    </OverviewSection>
+
+    <Features>
+      <li>
+        <span>Control remoto del robot</span>: Permite enviar instrucciones
+        desde una interfaz web y controlar las acciones del robot a distancia.
+      </li>
+
+      <li>
+        <span>Validación de instrucciones</span>: Las órdenes pasan por AWS
+        antes de llegar al robot, permitiendo comprobar la autorización del
+        usuario y controlar qué instrucciones pueden ejecutarse.
+      </li>
+
+      <li>
+        <span>Comunicación mediante MQTT</span>: EMQX funciona como
+        intermediario entre el sistema y el Arduino, permitiendo transmitir
+        instrucciones al robot y recibir información enviada por este.
+      </li>
+
+      <li>
+        <span>Registro de operaciones</span>: Las instrucciones enviadas se
+        almacenan en DynamoDB antes de ser ejecutadas, manteniendo un historial
+        de las acciones realizadas sobre el robot.
+      </li>
+
+      <li>
+        <span>Comunicación bidireccional</span>: El sistema no solo permite
+        enviar instrucciones al robot, sino también recibir datos provenientes
+        del dispositivo a través del broker MQTT.
+      </li>
+    </Features>
+
+    <div class='flex justify-between'>
+      <ButtonPrev Text='PulseAlert' />
+      <ButtonNext Text='BookMyFit' />
+    </div>
+  </MainWebSection>
+</SecondLayout>

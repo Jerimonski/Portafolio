@@ -5,6 +5,7 @@ import Features from "../components/Home/components/Features.astro"
 import MainWebSection from "../components/Home/components/MainWebSection.astro"
 import OverviewSection from "../components/Home/components/OverviewSection.astro"
 import TechsBar from "../components/Home/components/TechsBar.astro"
+import ButtonPrev from "../components/Home/components/ButtonPrev.astro"
 ---
 
 <SecondLayout>
@@ -50,11 +51,7 @@ import TechsBar from "../components/Home/components/TechsBar.astro"
         src='/projects/BookMyFit/BMF_adminView.png'
         alt='BonsaiPracticeFooter'
       />
-      <img
-        class='size-120 m-auto pb-12'
-        src='/projects/BookMyFit/BMF_tarjetaAgendada.png'
-        alt='BonsaiPracticeFooter'
-      />
+
       <img
         src='/projects/BookMyFit/BMF_deportesLoaded.png'
         alt='BonsaiPracticeFooter'
@@ -98,7 +95,8 @@ import TechsBar from "../components/Home/components/TechsBar.astro"
         con Jenkins y verificación de buenas prácticas mediante SonarQube.
       </li>
     </Features>
-    <div class='absolute right-0 max-lg:pr-8'>
+    <div class='flex justify-between'>
+      <ButtonPrev Text='Muck-Mon' />
       <ButtonNext Text='BlackShark' />
     </div>
   </MainWebSection>

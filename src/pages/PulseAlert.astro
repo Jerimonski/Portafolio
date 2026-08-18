@@ -1,0 +1,90 @@
+---
+import SecondLayout from "../layouts/SecondLayout.astro"
+import Features from "../components/Home/components/Features.astro"
+import MainWebSection from "../components/Home/components/MainWebSection.astro"
+import OverviewSection from "../components/Home/components/OverviewSection.astro"
+import TechsBar from "../components/Home/components/TechsBar.astro"
+import ButtonPrev from "../components/Home/components/ButtonPrev.astro"
+import ButtonNext from "../components/Home/components/ButtonNext.astro"
+---
+
+<SecondLayout>
+  <MainWebSection
+    year='2025'
+    title='PulseAlert'
+    urlImage='/projects/PulseAlertMAHO/monitor.jpg'
+    description='Desarrollé una plataforma para monitorear los dispositivos de red de la Municipalidad de Alto Hospicio, identificando automáticamente equipos activos, caídos e inactivos para facilitar la atención preventiva del departamento de soporte técnico.'
+    urlRepo='https://github.com/Jerimonski/PulseAlert-Backend.git'
+    rol='Full Stack'
+    client='Municipalidad de Alto Hospicio'
+  >
+    <TechsBar>
+      <span>React</span>
+      <span>JavaScript</span>
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>Tailwind CSS</span>
+      <span>Python</span>
+      <span>SQL 2019</span>
+    </TechsBar>
+
+    <OverviewSection>
+      Durante mi práctica profesional desarrollé una plataforma para reducir el
+      tiempo que los dispositivos de la Municipalidad de Alto Hospicio
+      permanecían desconectados de la red, evitando que estas interrupciones
+      afectaran por períodos prolongados el funcionamiento de sus respectivas
+      áreas. La interfaz web permitía supervisar cada dispositivo y consultar
+      información como su IP, nombre, estado y departamento. Además, ante
+      desconexiones prolongadas, el sistema enviaba una notificación al equipo
+      de soporte con los datos del dispositivo, su hora de caída, departamento y
+      tiempo de desconexión. De esta forma, se facilitaba una atención oportuna
+      para reducir el tiempo de inactividad y mantener la continuidad de las
+      operaciones.
+    </OverviewSection>
+
+    <Features>
+      <li>
+        <span>Monitoreo automático</span>: Verifica periódicamente la
+        conectividad de los dispositivos registrados mediante sus direcciones
+        IP, actualizando su estado de forma automática.
+      </li>
+
+      <li>
+        <span>Detección de desconexiones</span>: Un dispositivo es considerado
+        caído únicamente cuando previamente se encontraba activo y deja de
+        responder a las comprobaciones de conectividad.
+      </li>
+
+      <li>
+        <span>Confirmación de caídas</span>: Antes de generar una alerta, el
+        sistema confirma que la desconexión se mantenga durante varias
+        comprobaciones consecutivas, evitando notificaciones provocadas por
+        interrupciones momentáneas.
+      </li>
+
+      <li>
+        <span>Monitoreo en tiempo real</span>: Actualiza automáticamente el
+        estado de los dispositivos en la interfaz mediante WebSockets,
+        permitiendo visualizar los cambios sin necesidad de recargar la página.
+      </li>
+
+      <li>
+        <span>Gestión de dispositivos</span>: Permite registrar, modificar y
+        eliminar dispositivos, almacenando información como nombre, dirección IP
+        y departamento en una base de datos.
+      </li>
+
+      <li>
+        <span>Alertas automáticas</span>: Envía notificaciones mediante Gmail al
+        confirmar una caída prolongada, incluyendo información del dispositivo
+        para facilitar su identificación y atención por parte del equipo de
+        soporte.
+      </li>
+    </Features>
+
+    <div class='flex justify-between'>
+      <ButtonPrev Text='Vety' />
+      <ButtonNext Text='Muck-Mon' />
+    </div>
+  </MainWebSection>
+</SecondLayout>

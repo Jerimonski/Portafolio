@@ -1,0 +1,94 @@
+---
+import SecondLayout from "../layouts/SecondLayout.astro"
+import Features from "../components/Home/components/Features.astro"
+import MainWebSection from "../components/Home/components/MainWebSection.astro"
+import OverviewSection from "../components/Home/components/OverviewSection.astro"
+import TechsBar from "../components/Home/components/TechsBar.astro"
+import ButtonPrev from "../components/Home/components/ButtonPrev.astro"
+import ButtonNext from "../components/Home/components/ButtonNext.astro"
+---
+
+<SecondLayout>
+  <MainWebSection
+    year='2026'
+    title='Vety'
+    urlImage='/projects/VetyApp/VetyApp.jpg'
+    description='Sistema de gestión clínica veterinaria compuesto por una plataforma para clínicas y una aplicación móvil para tutores. Permite a las clínicas administrar la información de clientes, mascotas y fichas clínicas, mientras los tutores pueden consultar el historial y estado de salud de sus mascotas.'
+    urlRepo='https://github.com/Jerimonski/Vety_APP.git'
+    rol='Full Stack'
+    client='Proyecto personal'
+  >
+    <TechsBar>
+      <span>Flutter</span>
+      <span>Dart</span>
+      <span>NestJS</span>
+      <span>Prisma</span>
+      <span>PostgreSQL</span>
+      <span>JWT</span>
+      <span>Docker</span>
+    </TechsBar>
+
+    <OverviewSection>
+      Vety surge como una solución a la gestión fragmentada de la información
+      veterinaria y a la dependencia de registros físicos para mantener los
+      antecedentes de las mascotas. Para resolverlo, desarrollé un sistema que
+      centraliza la información clínica y conecta a las clínicas con los
+      tutores: las clínicas pueden registrar y administrar los antecedentes de
+      cada mascota, mientras los tutores pueden consultar esta información desde
+      una aplicación móvil y realizar un seguimiento de su estado de salud.
+    </OverviewSection>
+
+    <div class='pb-16 space-y-12'>
+      <h2 class='text-4xl font-Primary'>Imágenes</h2>
+
+      <div class='[&>img]:rounded-4xl space-y-12'>
+        <img
+          src='/projects/VetyApp/VetyAppHistorial.png'
+          alt='Interfaz de gestión clíni  ca de Vety App'
+        />
+
+        <img
+          src='/projects/VetyApp/VetyAppVacunas.jpg'
+          alt='Aplicación móvil de Vety App'
+        />
+      </div>
+
+      <img
+        src='/projects/VetyApp/VetyAppHome.jpg'
+        alt='Información de mascota en Vety App'
+      />
+    </div>
+
+    <Features>
+      <li>
+        <span>Gestión de pacientes</span>: Permite a las clínicas registrar y
+        administrar clientes, mascotas y sus antecedentes desde una interfaz
+        centralizada.
+      </li>
+
+      <li>
+        <span>Fichas clínicas</span>: Permite registrar y consultar la
+        información clínica asociada a cada mascota, manteniendo sus
+        antecedentes organizados.
+      </li>
+
+      <li>
+        <span>Seguimiento desde la aplicación móvil</span>: Los tutores pueden
+        consultar la información de sus mascotas, incluyendo antecedentes,
+        fichas clínicas y vacunas, sin modificar los registros realizados por la
+        clínica.
+      </li>
+
+      <li>
+        <span>Información centralizada</span>: Conecta la información gestionada
+        por la clínica con la aplicación utilizada por los tutores, evitando
+        depender de registros físicos para consultar los antecedentes de las
+        mascotas.
+      </li>
+    </Features>
+
+    <div class='absolute right-0 max-lg:pr-8'>
+      <ButtonNext Text='PulseAlert' />
+    </div>
+  </MainWebSection>
+</SecondLayout>

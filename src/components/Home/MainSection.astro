@@ -4,34 +4,99 @@ import ButtonCv from "../../ui/ButtonCv.astro"
 ---
 
 <section
-  class='flex flex-col items-center max-lg:h-full h-[880px] w-[1120px] py-48 max-lg:py-28 relative max-lg:w-full max-lg:px-8'
+  class='relative flex flex-col items-center w-[1120px] max-lg:w-full min-h-[880px] py-40 max-lg:py-24 max-lg:px-8'
 >
-  <div class='flex gap-12 max-lg:flex-col max-lg:place-items-center'>
-    <div class='relative'>
-      <img
-        class='rounded-[120px] size-100 top-0 max-w-[600px] max-lg:size-full'
-        src='/images/IAM.png'
-        alt='Foto Jeremy'
-      />
-    </div>
-    <div class='space-y-4 max-lg:space-y-6 max-lg:flex max-lg:flex-col'>
-      <h1
-        class='text-6xl max-sm:text-5xl text-light-green font-semibold text-left font-Primary'
+  <div
+    class='mt-8 flex w-full gap-16 max-lg:flex-col max-lg:items-center max-lg:gap-12'
+  >
+    <!-- Columna de texto -->
+    <div class='flex-1 space-y-6 max-lg:text-center'>
+      <p
+        class='flex items-center gap-3 font-mono text-sm tracking-[0.3em] text-white/50 max-lg:justify-center'
       >
-        Frontend Developer
-        <span class='text-white'>con nociones en backend</span>
-      </h1>
-      <span class='block max-sm:text-3xl text-4xl font-Primary'
-        >Jeremy Amaru</span
-      >
-      <p class='max-w-[550px] py-2'>
-        Desarrollo sitios web, aplicando React, TailwindCSS y buenas prácticas
-        de UX/UI para soluciones efectivas y funcionales.
+        <span class='h-px w-8 bg-light-green'></span>
+        FULL STACK DEVELOPER
       </p>
-      <ButtonCv initialText='CV' finalText='CV' />
+
+      <h1
+        class='font-Primary text-6xl max-sm:text-4xl font-bold leading-[0.95] text-white'
+      >
+        JEREMY<br />
+        <span class='text-light-green'>
+          AMARU<sup class='ml-1 align-super text-lg text-white/40'>®</sup>
+        </span>
+      </h1>
+
+      <p class='max-w-[520px] text-secondary-text max-lg:mx-auto'>
+        Transformo necesidades en soluciones digitales, creando aplicaciones web
+        funcionales, eficientes y escalables desde el concepto hasta la puesta
+        en producción.
+      </p>
+
+      <div class='flex flex-wrap items-center gap-4 pt-2 max-lg:justify-center'>
+        <a
+          href='#Proyectos'
+          class='rounded-full bg-light-green px-6 py-3 text-sm font-semibold text-[#0b0b0d] transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-green'
+        >
+          Ver proyectos →
+        </a>
+        <ButtonCv initialText='Descargar CV' finalText='Descargar CV' />
+      </div>
+
+      <!-- Stats -->
+      <div class='flex gap-10 pt-8 max-lg:justify-center'>
+        <div>
+          <span class='font-Primary block text-3xl font-bold text-white'
+            >+6</span
+          >
+          <span class='text-xs tracking-wide text-white/40'
+            >Proyectos desarrollados
+          </span>
+        </div>
+        <div>
+          <span class='font-Primary block text-3xl font-bold text-white'
+            >+3</span
+          >
+          <span class='text-xs tracking-wide text-white/40'
+            >Años de formación autodidacta</span
+          >
+        </div>
+        <div>
+          <span class='font-Primary block text-3xl font-bold text-white'>∞</span
+          >
+          <span class='text-xs tracking-wide text-white/40'
+            >Ganas de aprender</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Foto -->
+    <div class='relative'>
+      <div
+        class='absolute -inset-3 rounded-[2rem] border border-light-green/20'
+      >
+      </div>
+      <div
+        class='relative overflow-hidden rounded-[4.75rem] border border-white/10'
+      >
+        <img
+          src='/images/IAM.png'
+          alt='Foto Jeremy'
+          class='max-lg:size-72 object-cover'
+        />
+      </div>
     </div>
   </div>
-  <div class='animate-bounce absolute bottom-0 py-12 max-lg:hidden'>
-    <BsMouse size={40} />
+
+  <div
+    class='absolute bottom-0 flex flex-col items-center gap-2 py-10 text-white/40 max-lg:hidden'
+  >
+    <span class='font-mono text-[11px] tracking-[0.2em]'
+      >DESLIZA PARA EXPLORAR</span
+    >
+    <div class='animate-bounce motion-reduce:animate-none'>
+      <BsMouse size={26} />
+    </div>
   </div>
 </section>
