@@ -89,8 +89,20 @@ export const JestIcon = () => (
 
 export const Icons = {
   DevOps_Testing_QA: [
-    { name: "Jenkins", icon: JenkinsIcon },
-    { name: "SonarQube", icon: SonarQubeIcon },
-    { name: "Jest", icon: JestIcon },
+    {
+      name: "Jenkins",
+      icon: JenkinsIcon,
+      page: "https://www.jenkins.io",
+    },
+    {
+      name: "SonarQube",
+      icon: SonarQubeIcon,
+      page: "https://www.sonarsource.com/products/sonarqube",
+    },
+    {
+      name: "Jest",
+      icon: JestIcon,
+      page: "https://jestjs.io/es-ES",
+    },
   ],
 }

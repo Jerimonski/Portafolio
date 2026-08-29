@@ -7,10 +7,12 @@ const icons = Icons.Learning
 <TecsContent>
   {
     icons.map((icon) => (
-      <div>
-        <icon.icon />
-        <span>{icon.name}</span>
-      </div>
+      <a href={icon.page} target={"_blank"}>
+        <div>
+          <icon.icon />
+          <span>{icon.name}</span>
+        </div>
+      </a>
     ))
   }
 </TecsContent>
