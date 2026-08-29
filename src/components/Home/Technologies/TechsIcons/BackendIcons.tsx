@@ -153,7 +153,7 @@ export const Icons = {
     {
       name: "Prisma",
       icon: PrismaIcon,
-      page: "https://www.prisma.io",
+      page: "https://www.prisma.io/orm",
     },
   ],
 }
