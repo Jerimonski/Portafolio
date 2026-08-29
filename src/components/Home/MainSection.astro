@@ -7,7 +7,7 @@ import ButtonCv from "../../ui/ButtonCv.astro"
   class='relative flex flex-col items-center w-[1120px] max-lg:w-full min-h-[880px] py-40 max-lg:py-24 max-lg:px-8'
 >
   <div
-    class='mt-8 flex w-full gap-16 max-lg:flex-col max-lg:items-center max-lg:gap-12'
+    class='mt-8 flex w-full gap-16 max-lg:flex-col max-lg:items-center max-lg:gap-12 max-lg:rows-2'
   >
     <!-- Columna de texto -->
     <div class='flex-1 space-y-6 max-lg:text-center'>
@@ -72,7 +72,7 @@ import ButtonCv from "../../ui/ButtonCv.astro"
     </div>
 
     <!-- Foto -->
-    <div class='relative'>
+    <div class='relative max-lg:order-first'>
       <div
         class='absolute -inset-3 rounded-[2rem] border border-light-green/20'
       >
@@ -100,3 +100,6 @@ import ButtonCv from "../../ui/ButtonCv.astro"
     </div>
   </div>
 </section>
+
+ponerlos en columnas y cambiar su posicion dependiendo de la resolucion de
+pantalla, para que se vean bien en moviles y tablets.
